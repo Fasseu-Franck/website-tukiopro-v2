@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="240" viewBox="0 0 1280 240">
+  <defs>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="rgba(0,0,0,0.08)"/></filter>
+  </defs>
+
+  <!-- Card 1: Projets entrepreneuriaux -->
+  <rect x="0" y="0" width="420" height="240" rx="14" fill="white" filter="url(#sh)"/>
+  <rect x="0" y="0" width="420" height="5" rx="14" fill="#BCA402"/>
+  <circle cx="90" cy="95" r="52" fill="#FFFDF0"/>
+  <!-- Rocket -->
+  <path d="M90 55 L100 88 L90 98 L80 88 Z" fill="#BCA402"/>
+  <circle cx="90" cy="72" r="7" fill="#1A1A0F"/>
+  <path d="M80 90 L70 106 L82 101 Z" fill="#D4B800"/>
+  <path d="M100 90 L110 106 L98 101 Z" fill="#D4B800"/>
+  <path d="M85 98 L82 115 L90 108 L98 115 L95 98" fill="rgba(188,164,2,0.3)"/>
+  <!-- Progress ring -->
+  <circle cx="280" cy="90" r="48" fill="none" stroke="#F0EDE0" stroke-width="7"/>
+  <circle cx="280" cy="90" r="48" fill="none" stroke="#BCA402" stroke-width="7" stroke-dasharray="201 302" stroke-linecap="round" transform="rotate(-90 280 90)"/>
+  <text x="280" y="86" text-anchor="middle" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#1A1A0F">70%</text>
+  <text x="280" y="104" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#999">financé</text>
+  <text x="150" y="170" text-anchor="middle" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#1A1A0F">Projets</text>
+  <text x="150" y="190" text-anchor="middle" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#BCA402">Entrepreneuriaux</text>
+  <text x="150" y="215" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#AAA">Financer votre startup ou prototype</text>
+
+  <!-- Card 2: Solidarité (dark) -->
+  <rect x="430" y="0" width="420" height="240" rx="14" fill="#1A1A0F" filter="url(#sh)"/>
+  <rect x="430" y="0" width="420" height="5" rx="14" fill="#BCA402"/>
+  <circle cx="530" cy="95" r="52" fill="rgba(188,164,2,0.1)"/>
+  <!-- Heart -->
+  <path d="M530 118 L498 90 Q484 70 498 64 Q512 58 530 78 Q548 58 562 64 Q576 70 562 90 Z" fill="#BCA402"/>
+  <!-- Hands reaching up -->
+  <path d="M504 126 Q494 116 504 106" fill="none" stroke="rgba(188,164,2,0.5)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M556 126 Q566 116 556 106" fill="none" stroke="rgba(188,164,2,0.5)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Amount raised -->
+  <rect x="600" y="60" width="220" height="70" rx="10" fill="rgba(188,164,2,0.12)" stroke="rgba(188,164,2,0.2)" stroke-width="1"/>
+  <text x="710" y="88" text-anchor="middle" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.4)">COLLECTÉ EN 3 SEMAINES</text>
+  <text x="710" y="114" text-anchor="middle" font-family="Georgia,serif" font-size="22" font-weight="700" fill="#BCA402">3.5M FCFA</text>
+  <text x="430" y="180" font-family="Georgia,serif" font-size="15" font-weight="700" fill="white">  Urgences &amp;</text>
+  <text x="430" y="200" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#BCA402">  Solidarité</text>
+  <text x="430" y="220" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.4)">  Mobilisez rapidement autour d'une cause</text>
+
+  <!-- Card 3: Créatifs -->
+  <rect x="860" y="0" width="420" height="240" rx="14" fill="white" filter="url(#sh)"/>
+  <rect x="860" y="0" width="420" height="5" rx="14" fill="#BCA402"/>
+  <circle cx="960" cy="95" r="52" fill="#FFFDF0"/>
+  <!-- Palette -->
+  <ellipse cx="960" cy="95" rx="36" ry="28" fill="white" stroke="#BCA402" stroke-width="1.5"/>
+  <circle cx="946" cy="86" r="5" fill="#BCA402"/>
+  <circle cx="962" cy="82" r="5" fill="#D4B800"/>
+  <circle cx="976" cy="88" r="5" fill="#C4A832"/>
+  <circle cx="980" cy="100" r="5" fill="#8A7600"/>
+  <circle cx="953" cy="106" r="5" fill="#E8D080"/>
+  <ellipse cx="963" cy="101" rx="8" ry="7" fill="#F8F4E0"/>
+  <!-- Brush -->
+  <line x1="976" y1="78" x2="998" y2="60" stroke="#1A1A0F" stroke-width="3" stroke-linecap="round"/>
+  <path d="M974 80 L978 76 L984 82 L980 86 Z" fill="#BCA402"/>
+  <!-- Progress bar -->
+  <rect x="1020" y="75" width="230" height="8" rx="4" fill="#F0EDE0"/>
+  <rect x="1020" y="75" width="173" height="8" rx="4" fill="#BCA402"/>
+  <text x="1135" y="62" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#BCA402" font-weight="700">75% · 47 soutiens</text>
+  <text x="1135" y="105" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#999">Album en cours</text>
+  <text x="1060" y="170" text-anchor="middle" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#1A1A0F">Projets</text>
+  <text x="1060" y="190" text-anchor="middle" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#BCA402">Créatifs &amp; Culturels</text>
+  <text x="1060" y="215" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#AAA">Albums, films, expositions</text>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="240" viewBox="0 0 1280 240">
+  <defs>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="rgba(0,0,0,0.08)"/></filter>
+  </defs>
+  <!-- Card 1: Mariage -->
+  <rect x="0" y="0" width="420" height="240" rx="14" fill="white" filter="url(#sh)"/>
+  <rect x="0" y="0" width="420" height="5" rx="14" fill="#BCA402"/>
+  <circle cx="90" cy="90" r="52" fill="#FFFDF5"/>
+  <!-- Rings -->
+  <circle cx="78" cy="90" r="22" fill="none" stroke="#BCA402" stroke-width="4"/>
+  <circle cx="102" cy="90" r="22" fill="none" stroke="#1A1A0F" stroke-width="3"/>
+  <!-- RSVP card -->
+  <rect x="158" y="52" width="248" height="80" rx="10" fill="#FFFDF5" stroke="#F0EDE0" stroke-width="1"/>
+  <text x="282" y="75" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#999">Aminata &amp; David · 14 Juin</text>
+  <rect x="170" y="84" width="100" height="24" rx="5" fill="#BCA402"/>
+  <text x="220" y="101" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="700" fill="#1A1A0F">Je serai là ✓</text>
+  <rect x="278" y="84" width="116" height="24" rx="5" fill="#F8F5EC" stroke="#E8E3D0" stroke-width="1"/>
+  <text x="336" y="101" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#AAA">87 confirmés</text>
+  <text x="60" y="178" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#1A1A0F">Mariages &amp;</text>
+  <text x="60" y="198" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#BCA402">Unions</text>
+  <text x="60" y="218" font-family="sans-serif" font-size="11" fill="#AAA">Gestion invités, liste de mariage</text>
+
+  <!-- Card 2: Anniversaires (dark) -->
+  <rect x="430" y="0" width="420" height="240" rx="14" fill="#1A1A0F" filter="url(#sh)"/>
+  <rect x="430" y="0" width="420" height="5" rx="14" fill="#BCA402"/>
+  <circle cx="530" cy="90" r="52" fill="rgba(188,164,2,0.1)"/>
+  <!-- Birthday cake -->
+  <rect x="502" y="92" width="56" height="34" rx="3" fill="#F5EFC0" stroke="#BCA402" stroke-width="1.5"/>
+  <rect x="502" y="92" width="56" height="12" rx="3" fill="rgba(188,164,2,0.3)"/>
+  <line x1="516" y1="92" x2="516" y2="72" stroke="rgba(188,164,2,0.5)" stroke-width="1.5"/>
+  <line x1="530" y1="92" x2="530" y2="67" stroke="rgba(188,164,2,0.5)" stroke-width="1.5"/>
+  <line x1="544" y1="92" x2="544" y2="72" stroke="rgba(188,164,2,0.5)" stroke-width="1.5"/>
+  <ellipse cx="516" cy="72" rx="3" ry="5" fill="#BCA402"/>
+  <ellipse cx="530" cy="67" rx="3" ry="5" fill="#D4B800"/>
+  <ellipse cx="544" cy="72" rx="3" ry="5" fill="#BCA402"/>
+  <ellipse cx="516" cy="67" rx="1.5" ry="2.5" fill="#FF9500"/>
+  <ellipse cx="530" cy="62" rx="1.5" ry="2.5" fill="#FF9500"/>
+  <ellipse cx="544" cy="67" rx="1.5" ry="2.5" fill="#FF9500"/>
+  <!-- Stars -->
+  <text x="478" y="78" font-family="sans-serif" font-size="14" fill="#BCA402" opacity="0.4">★</text>
+  <text x="568" y="72" font-family="sans-serif" font-size="12" fill="#BCA402" opacity="0.4">★</text>
+  <!-- Guest counter -->
+  <rect x="608" y="56" width="218" height="80" rx="10" fill="rgba(188,164,2,0.1)" stroke="rgba(188,164,2,0.2)" stroke-width="1"/>
+  <text x="717" y="82" text-anchor="middle" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.35)">INVITÉS</text>
+  <text x="717" y="110" text-anchor="middle" font-family="Georgia,serif" font-size="26" font-weight="700" fill="#BCA402">120</text>
+  <text x="717" y="128" text-anchor="middle" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.35)">Confirmés</text>
+  <text x="440" y="178" font-family="Georgia,serif" font-size="15" font-weight="700" fill="white">  Anniversaires &amp;</text>
+  <text x="440" y="198" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#BCA402">  Galas Privés</text>
+  <text x="440" y="218" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.4)">  Invitations digitales élégantes</text>
+
+  <!-- Card 3: Baptêmes -->
+  <rect x="860" y="0" width="420" height="240" rx="14" fill="white" filter="url(#sh)"/>
+  <rect x="860" y="0" width="420" height="5" rx="14" fill="#BCA402"/>
+  <circle cx="960" cy="90" r="52" fill="#FFFDF5"/>
+  <!-- Dove-like shape -->
+  <ellipse cx="960" cy="94" rx="28" ry="22" fill="#F0E8B0"/>
+  <circle cx="960" cy="78" r="12" fill="#E8D880"/>
+  <circle cx="955" cy="75" r="2.5" fill="#8A7600"/>
+  <circle cx="965" cy="75" r="2.5" fill="#8A7600"/>
+  <path d="M934 88 Q920 78 928 90 Q934 96 944 90" fill="#F0E8B0" stroke="#BCA402" stroke-width="1"/>
+  <path d="M986 88 Q1000 78 992 90 Q986 96 976 90" fill="#F0E8B0" stroke="#BCA402" stroke-width="1"/>
+  <!-- Gift list cards -->
+  <rect x="1020" y="44" width="130" height="66" rx="8" fill="#FFFDF5" stroke="#F0EDE0" stroke-width="1"/>
+  <text x="1085" y="65" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#BCA402" font-weight="700">LISTE DE NAISSANCE</text>
+  <rect x="1030" y="72" width="100" height="6" rx="3" fill="#F0EDE0"/>
+  <rect x="1030" y="72" width="70" height="6" rx="3" fill="#BCA402"/>
+  <text x="1085" y="97" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#AAA">70% · 44 dons</text>
+  <rect x="1158" y="44" width="98" height="66" rx="8" fill="#1A1A0F"/>
+  <rect x="1158" y="44" width="98" height="4" rx="8" fill="#BCA402"/>
+  <text x="1207" y="68" text-anchor="middle" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.35)">Don reçu</text>
+  <text x="1207" y="88" text-anchor="middle" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#BCA402">250K F</text>
+  <text x="930" y="175" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#1A1A0F">Baptêmes &amp;</text>
+  <text x="930" y="195" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#BCA402">Baby Shower</text>
+  <text x="930" y="217" font-family="sans-serif" font-size="11" fill="#AAA">Liste de naissance intégrée</text>
+</svg>

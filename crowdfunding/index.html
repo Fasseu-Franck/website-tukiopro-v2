@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TUKIO PRO Collecte — Lancez vos campagnes de financement participatif avec page dédiée, niveaux de contribution et tableau de bord en temps réel.">
+  <title>Collecte de Fonds — TUKIO PRO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar" role="banner" id="navbar">
+    <nav class="nav-container" aria-label="Navigation principale">
+      <a href="../home/index.html" class="nav-logo" aria-label="TUKIO PRO — Accueil">
+        <span class="logo-mark">T</span>
+        <span class="logo-text">TUKIO <em>PRO</em></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="../private-ticketing/index.html" class="nav-link">Billets de mariage</a></li>
+        <li><a href="../corporate-ticketing/index.html" class="nav-link">Billetterie</a></li>
+        <li><a href="../e-voting/index.html" class="nav-link">E-vote</a></li>
+        <li><a href="../crowdfunding/index.html" class="nav-link active" aria-current="page">Collectes</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#contact" class="btn-nav-pro">Espace pro</a>
+        <a href="#contact" class="btn-nav-login">Se connecter</a>
+        <button class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul class="mobile-nav-links" role="list">
+        <li><a href="../private-ticketing/index.html" class="mobile-nav-link">Billets de mariage</a></li>
+        <li><a href="../corporate-ticketing/index.html" class="mobile-nav-link">Billetterie</a></li>
+        <li><a href="../e-voting/index.html" class="mobile-nav-link">E-vote</a></li>
+        <li><a href="../crowdfunding/index.html" class="mobile-nav-link active">Collectes</a></li>
+      </ul>
+      <div class="mobile-nav-actions">
+        <a href="#contact" class="btn-nav-pro">Espace pro</a>
+        <a href="#contact" class="btn-nav-login">Se connecter</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="module-hero" aria-labelledby="hero-title">
+      <div class="module-hero-bg"></div>
+      <div class="module-hero-container">
+        <div class="module-hero-content">
+          <h1 class="module-hero-title" id="hero-title">Financez <span class="accent">ce qui compte.</span></h1>
+          <p class="module-hero-subtitle">Projets entrepreneuriaux, causes solidaires, créations culturelles — lancez votre collecte de fonds en quelques minutes et mobilisez votre communauté autour d'un objectif commun.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-hero-primary">Lancer ma collecte</a>
+            <a href="#features" class="btn-hero-secondary">Comment ça marche</a>
+          </div>
+        </div>
+        <div class="module-hero-image">
+          <img src="../images/collecte-usecases.svg" alt="Modules collecte TUKIO PRO — projets, solidarité, créatifs" width="560" height="240" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <!-- USE CASES (3 avec illustrations) -->
+    <section class="usecases-section" aria-labelledby="uc-title">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Pour quels projets ?</span>
+          <h2 class="section-title" id="uc-title">Trois types de collectes.</h2>
+          <p class="section-desc">De la startup en herbe à l'association caritative, TUKIO PRO adapte chaque collecte à son audience et à ses objectifs.</p>
+        </div>
+        <div class="usecases-grid">
+          <div class="usecase-card reveal">
+            <div class="usecase-img-wrap">
+              <svg width="72" height="72" viewBox="0 0 72 72" fill="none" aria-hidden="true">
+                <circle cx="36" cy="36" r="36" fill="rgba(188,164,2,0.1)"/>
+                <path d="M36 20 L42 34 L38 38 L36 46 L34 38 L30 34 Z" fill="#BCA402"/>
+                <circle cx="36" cy="28" r="5" fill="#1A1A0F"/>
+                <path d="M30 38 L24 50 L33 46 Z" fill="#D4B800"/>
+                <path d="M42 38 L48 50 L39 46 Z" fill="#D4B800"/>
+                <circle cx="36" cy="56" r="8" fill="none" stroke="#BCA402" stroke-width="2" stroke-dasharray="3,3"/>
+                <text x="36" y="60" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="#BCA402">70%</text>
+              </svg>
+            </div>
+            <h3>Projets Entrepreneuriaux</h3>
+            <p>Startup, prototype, première collection — financez le lancement avec l'aide de votre réseau et d'inconnus convaincus par votre vision. Objectif visible, avancement en temps réel.</p>
+          </div>
+          <div class="usecase-card reveal">
+            <div class="usecase-img-wrap">
+              <svg width="72" height="72" viewBox="0 0 72 72" fill="none" aria-hidden="true">
+                <circle cx="36" cy="36" r="36" fill="rgba(188,164,2,0.1)"/>
+                <path d="M36 52 L18 36 Q10 24 18 20 Q26 16 36 28 Q46 16 54 20 Q62 24 54 36 Z" fill="#BCA402"/>
+                <path d="M22 46 Q16 40 22 36" fill="none" stroke="rgba(188,164,2,0.5)" stroke-width="2" stroke-linecap="round"/>
+                <path d="M50 46 Q56 40 50 36" fill="none" stroke="rgba(188,164,2,0.5)" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="24" cy="24" r="6" fill="#F5EFC0"/>
+                <circle cx="24" cy="21" r="3" fill="#C4A832"/>
+                <circle cx="48" cy="24" r="6" fill="#EDE8B0"/>
+                <circle cx="48" cy="21" r="3" fill="#AE9228"/>
+              </svg>
+            </div>
+            <h3>Urgences &amp; Solidarité</h3>
+            <p>Frais médicaux, reconstruction, soutien familial — mobilisez rapidement autour d'une cause urgente. Contributions reçues en moins de 5 minutes, même depuis l'étranger.</p>
+          </div>
+          <div class="usecase-card reveal">
+            <div class="usecase-img-wrap">
+              <svg width="72" height="72" viewBox="0 0 72 72" fill="none" aria-hidden="true">
+                <circle cx="36" cy="36" r="36" fill="rgba(188,164,2,0.1)"/>
+                <ellipse cx="36" cy="36" rx="16" ry="12" fill="white" stroke="#BCA402" stroke-width="1.5"/>
+                <circle cx="28" cy="32" r="3" fill="#BCA402"/>
+                <circle cx="36" cy="29" r="3" fill="#D4B800"/>
+                <circle cx="44" cy="33" r="3" fill="#C4A832"/>
+                <circle cx="45" cy="40" r="3" fill="#8A7600"/>
+                <circle cx="31" cy="42" r="3" fill="#E8D080"/>
+                <ellipse cx="37" cy="40" rx="5" ry="4" fill="#F8F4E0"/>
+                <line x1="44" y1="29" x2="54" y2="20" stroke="#1A1A0F" stroke-width="2" stroke-linecap="round"/>
+                <path d="M43 31 L45 27 L49 31 L47 33 Z" fill="#BCA402"/>
+                <rect x="40" y="50" width="20" height="8" rx="4" fill="rgba(188,164,2,0.15)" stroke="rgba(188,164,2,0.3)" stroke-width="1"/>
+                <text x="50" y="57" text-anchor="middle" font-family="sans-serif" font-size="7" font-weight="700" fill="#BCA402">47 soutiens</text>
+              </svg>
+            </div>
+            <h3>Projets Créatifs</h3>
+            <p>Albums musicaux, films indépendants, expositions artistiques — donnez vie à votre création grâce à votre communauté culturelle. Niveaux de contribution avec contreparties exclusives.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features-section" id="features" aria-labelledby="feat-title">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Fonctionnalités</span>
+          <h2 class="section-title" id="feat-title">Une plateforme pensée<br>pour la collecte.</h2>
+        </div>
+        <div class="features-list">
+
+          <div class="feature-row reveal">
+            <div class="feature-content">
+              <div class="feature-num" aria-hidden="true">01</div>
+              <h3 class="feature-title">Page campagne personnalisée</h3>
+              <p class="feature-desc">Une landing page dédiée à votre cause : texte de présentation, vidéo, galerie photos, objectif financier avec barre de progression live et lien de partage unique pour WhatsApp, email et réseaux sociaux.</p>
+            </div>
+            <div class="feature-visual" aria-hidden="true">
+              <div class="feature-card">
+                <div class="fc-label">EduAfrica — Construire une école</div>
+                <div class="fc-progress-label">
+                  <span>Objectif atteint à <strong style="color:#BCA402">70%</strong></span>
+                  <span>34 jours restants</span>
+                </div>
+                <div class="fc-progress-bar-wrap"><div class="fc-progress-bar" style="width:70%"></div></div>
+                <div class="fc-progress-meta">
+                  <span>3 500 000 FCFA collectés</span>
+                  <span>147 contributeurs</span>
+                </div>
+                <div class="fc-btn">Soutenir ce projet</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-row feature-row--rev reveal">
+            <div class="feature-content">
+              <div class="feature-num" aria-hidden="true">02</div>
+              <h3 class="feature-title">Niveaux de contribution</h3>
+              <p class="feature-desc">Proposez des paliers de don avec contreparties : accès anticipé, mention dans les crédits, goodies exclusifs. Maximisez l'engagement et la valeur perçue de chaque contribution.</p>
+            </div>
+            <div class="feature-visual" aria-hidden="true">
+              <div class="feature-card">
+                <div class="fc-tier">
+                  <span class="fc-tier-price">2 000 FCFA</span>
+                  <span class="fc-tier-name">Soutien Bronze</span>
+                  <span class="fc-tier-desc">Votre nom dans les remerciements</span>
+                </div>
+                <div class="fc-tier fc-tier--active">
+                  <span class="fc-tier-price">10 000 FCFA</span>
+                  <span class="fc-tier-name">Soutien Or ✦ Populaire</span>
+                  <span class="fc-tier-desc">Accès prioritaire + goodies exclusifs</span>
+                </div>
+                <div class="fc-tier">
+                  <span class="fc-tier-price">50 000 FCFA</span>
+                  <span class="fc-tier-name">Soutien Platinum</span>
+                  <span class="fc-tier-desc">Co-créateur + visibilité totale</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-row reveal">
+            <div class="feature-content">
+              <div class="feature-num" aria-hidden="true">03</div>
+              <h3 class="feature-title">Relances automatiques</h3>
+              <p class="feature-desc">Notre système envoie automatiquement des rappels ciblés par SMS et email aux visiteurs de votre page qui n'ont pas encore contribué. Récupérez jusqu'à 40% de vos abandons.</p>
+            </div>
+            <div class="feature-visual" aria-hidden="true">
+              <div class="feature-card">
+                <div class="fc-stat-row"><span>Taux de conversion</span><span class="fc-gold">34%</span></div>
+                <div class="fc-stat-row"><span>Relances envoyées</span><span>1 247</span></div>
+                <div class="fc-stat-row"><span>Conversions relance</span><span>318</span></div>
+                <div class="fc-stat-row"><span>Gain estimé</span><span class="fc-gold">+40%</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-section" aria-label="Statistiques collecte">
+      <div class="section-container">
+        <div class="stats-grid" role="list">
+          <div class="stat-card reveal" role="listitem">
+            <span class="stat-number" data-target="420">0</span><span class="stat-suffix">+</span>
+            <p class="stat-label">Campagnes financées</p>
+            <span class="stat-change">↑ dont 80% ont dépassé l'objectif</span>
+          </div>
+          <div class="stat-card reveal" role="listitem">
+            <span class="stat-number" data-target="4200000">0</span>
+            <p class="stat-label">FCFA collectés au total</p>
+            <span class="stat-change">↑ +130% vs année précédente</span>
+          </div>
+          <div class="stat-card reveal" role="listitem">
+            <span class="stat-number" data-target="140">0</span><span class="stat-suffix">%</span>
+            <p class="stat-label">Dépassement moyen</p>
+            <span class="stat-change">↑ grâce aux relances auto</span>
+          </div>
+          <div class="stat-card reveal" role="listitem">
+            <span class="stat-number" data-target="72">0</span><span class="stat-suffix">h</span>
+            <p class="stat-label">Délai moyen 1er virement</p>
+            <span class="stat-change">↑ reversement rapide garanti</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section" aria-label="Témoignages collecte">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Succès stories</span>
+          <h2 class="section-title">Ils ont atteint leurs objectifs.</h2>
+        </div>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 étoiles">★★★★★</div>
+            <p class="testimonial-text">"Notre collecte pour l'album a dépassé l'objectif de 60%. Les relances automatiques ont vraiment fait la différence sur les derniers jours de campagne."</p>
+            <footer class="testimonial-author">
+              <div class="author-avatar">LM</div>
+              <div class="author-info">
+                <cite class="author-name">Lena Mbaye</cite>
+                <span class="author-role">Artiste musicale, Dakar</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card testimonial-card--featured reveal">
+            <div class="testimonial-stars" aria-label="5 étoiles">★★★★★</div>
+            <p class="testimonial-text">"3 millions de FCFA collectés en 3 semaines pour construire une salle de classe. La transparence de la plateforme a rassuré tous nos donateurs, y compris ceux de la diaspora."</p>
+            <footer class="testimonial-author">
+              <div class="author-avatar">EO</div>
+              <div class="author-info">
+                <cite class="author-name">Emmanuel Otieno</cite>
+                <span class="author-role">Fondateur ONG EduAfrica</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 étoiles">★★★★★</div>
+            <p class="testimonial-text">"Les niveaux de contribution ont transformé nos donateurs en vrais ambassadeurs. Certains ont partagé notre campagne à plus de 200 personnes chacun."</p>
+            <footer class="testimonial-author">
+              <div class="author-avatar">CF</div>
+              <div class="author-info">
+                <cite class="author-name">Carole Fotso</cite>
+                <span class="author-role">Co-fondatrice, TechYouth Cameroun</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section" aria-labelledby="faq-title">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">FAQ</span>
+          <h2 class="section-title" id="faq-title">Vos questions sur la collecte.</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="fq-c1">Je reçois les fonds même si l'objectif n'est pas atteint ?<span class="faq-icon">+</span></button>
+            <div class="faq-answer" id="fq-c1" hidden><p>Vous choisissez le modèle : "tout ou rien" (vous recevez seulement si l'objectif est atteint) ou "garder ce qui est collecté" (toutes les contributions quelle que soit la somme). Les deux options sont disponibles lors de la création.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="fq-c2">Quelle commission prend TUKIO PRO ?<span class="faq-icon">+</span></button>
+            <div class="faq-answer" id="fq-c2" hidden><p>Notre commission est prélevée uniquement sur les montants effectivement collectés. Aucun frais fixe, aucun abonnement. Contactez-nous pour connaître le taux applicable à votre type de campagne.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="fq-c3">Puis-je accepter des contributions depuis l'étranger ?<span class="faq-icon">+</span></button>
+            <div class="faq-answer" id="fq-c3" hidden><p>Oui. TUKIO PRO accepte les paiements internationaux via carte bancaire (Visa/Mastercard) et des solutions locales dans plus de 40 pays. Votre diaspora peut vous soutenir depuis n'importe quel continent.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="fq-c4">Comment mes donateurs sont-ils informés de l'avancement ?<span class="faq-icon">+</span></button>
+            <div class="faq-answer" id="fq-c4" hidden><p>Publiez des mises à jour directement sur votre page. Vos contributeurs reçoivent automatiquement une notification par email et SMS à chaque mise à jour. La transparence renforce la confiance et fidélise les soutiens.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" id="contact" aria-labelledby="cta-title">
+      <div class="cta-bg-glow" aria-hidden="true"></div>
+      <div class="section-container">
+        <div class="cta-content">
+          <span class="cta-eyebrow">Prêt à collecter ?</span>
+          <h2 class="cta-title" id="cta-title">Votre cause mérite<br>d'être financée.</h2>
+          <p class="cta-desc">Rejoignez 420+ porteurs de projets qui ont atteint — et souvent dépassé — leurs objectifs avec TUKIO PRO.</p>
+          <div class="cta-form" role="form" aria-label="Formulaire collecte">
+            <label for="cta-email" class="sr-only">Votre email professionnel</label>
+            <input type="email" id="cta-email" name="email" placeholder="Votre email professionnel" class="cta-input" autocomplete="email">
+            <button type="submit" class="cta-submit">Lancer ma collecte</button>
+          </div>
+          <p class="cta-note">Création gratuite · Commission uniquement sur le succès</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="../home/index.html" class="footer-logo">
+          <span class="logo-mark">T</span><span class="logo-text">TUKIO <em>PRO</em></span>
+        </a>
+        <p class="footer-tagline">La plateforme événementielle<br>pensée pour l'Afrique et le monde.</p>
+        <div class="footer-socials" aria-label="Réseaux sociaux">
+          <a href="#" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="rgba(255,255,255,0.4)"/></svg></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <div class="footer-col">
+          <h3 class="footer-col-title">Modules</h3>
+          <ul role="list">
+            <li><a href="../e-voting/index.html" class="footer-link">E-Vote</a></li>
+            <li><a href="../crowdfunding/index.html" class="footer-link">Collecte de fonds</a></li>
+            <li><a href="../corporate-ticketing/index.html" class="footer-link">Billetterie Corporate</a></li>
+            <li><a href="../private-ticketing/index.html" class="footer-link">Événements Privés</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Ressources</h3>
+          <ul role="list">
+            <li><a href="#" class="footer-link">FAQ</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+            <li><a href="#" class="footer-link">Documentation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Légal</h3>
+          <ul role="list">
+            <li><a href="#" class="footer-link">Mentions légales</a></li>
+            <li><a href="#" class="footer-link">CGU</a></li>
+            <li><a href="#" class="footer-link">Confidentialité</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TUKIO PRO. Tous droits réservés.</p>
+      <p>Module Collecte — Financement participatif</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="240" viewBox="0 0 1280 240">
+  <!-- Three use case cards side by side -->
+  <defs>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="rgba(0,0,0,0.08)"/></filter>
+  </defs>
+
+  <!-- Card 1: Awards -->
+  <rect x="0" y="0" width="420" height="240" rx="14" fill="white" filter="url(#sh)"/>
+  <rect x="0" y="0" width="420" height="5" rx="14" fill="#BCA402"/>
+  <circle cx="90" cy="95" r="52" fill="#FFFDF0"/>
+  <!-- Trophy -->
+  <path d="M66 70 L114 70 L106 115 Q90 130 74 115 Z" fill="#F5EFC0" stroke="#BCA402" stroke-width="2"/>
+  <rect x="82" y="115" width="16" height="14" fill="#BCA402"/>
+  <rect x="72" y="129" width="36" height="8" rx="4" fill="#1A1A0F"/>
+  <path d="M66 82 Q50 82 50 94 Q50 106 66 106" fill="none" stroke="#BCA402" stroke-width="1.5"/>
+  <path d="M114 82 Q130 82 130 94 Q130 106 114 106" fill="none" stroke="#BCA402" stroke-width="1.5"/>
+  <text x="90" y="102" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#BCA402">★</text>
+  <text x="230" y="60" font-family="Georgia,serif" font-size="16" font-weight="700" fill="#1A1A0F">Awards &amp;</text>
+  <text x="230" y="80" font-family="Georgia,serif" font-size="16" font-weight="700" fill="#1A1A0F">Distinctions</text>
+  <text x="230" y="105" font-family="sans-serif" font-size="12" fill="#999">Cérémonies de prix annuelles</text>
+  <text x="230" y="122" font-family="sans-serif" font-size="12" fill="#999">avec vote public sécurisé</text>
+  <rect x="160" y="155" width="240" height="52" rx="8" fill="#FFFDF0"/>
+  <text x="280" y="178" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#BCA402" font-weight="700">5 200 votes · 72h</text>
+  <text x="280" y="196" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#AAA">Résultats en temps réel</text>
+
+  <!-- Card 2: Talents -->
+  <rect x="430" y="0" width="420" height="240" rx="14" fill="#1A1A0F" filter="url(#sh)"/>
+  <rect x="430" y="0" width="420" height="5" rx="14" fill="#BCA402"/>
+  <!-- Mic icon area -->
+  <circle cx="530" cy="95" r="52" fill="rgba(188,164,2,0.12)"/>
+  <rect x="516" y="63" width="28" height="44" rx="14" fill="#BCA402"/>
+  <circle cx="530" cy="78" r="6" fill="rgba(0,0,0,0.2)"/>
+  <path d="M504 100 Q504 126 530 126 Q556 126 556 100" fill="none" stroke="rgba(188,164,2,0.6)" stroke-width="2"/>
+  <line x1="530" y1="126" x2="530" y2="140" stroke="rgba(188,164,2,0.6)" stroke-width="2"/>
+  <line x1="518" y1="140" x2="542" y2="140" stroke="rgba(188,164,2,0.6)" stroke-width="2"/>
+  <!-- Stars -->
+  <text x="470" y="56" font-family="sans-serif" font-size="18" fill="#BCA402" opacity="0.5">★</text>
+  <text x="564" y="50" font-family="sans-serif" font-size="14" fill="#BCA402" opacity="0.4">★</text>
+  <text x="660" y="55" font-family="Georgia,serif" font-size="16" font-weight="700" fill="white">Concours de</text>
+  <text x="660" y="75" font-family="Georgia,serif" font-size="16" font-weight="700" fill="white">Talents</text>
+  <text x="660" y="100" font-family="sans-serif" font-size="12" fill="rgba(255,255,255,0.5)">Musique, danse, photo</text>
+  <text x="660" y="118" font-family="sans-serif" font-size="12" fill="rgba(255,255,255,0.5)">Soutenez vos favoris</text>
+  <rect x="590" y="155" width="240" height="52" rx="8" fill="rgba(188,164,2,0.12)" stroke="rgba(188,164,2,0.2)" stroke-width="1"/>
+  <text x="710" y="178" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#BCA402" font-weight="700">Vote payant activé</text>
+  <text x="710" y="196" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.4)">500 FCFA par vote</text>
+
+  <!-- Card 3: Corporate -->
+  <rect x="860" y="0" width="420" height="240" rx="14" fill="white" filter="url(#sh)"/>
+  <rect x="860" y="0" width="420" height="5" rx="14" fill="#BCA402"/>
+  <circle cx="960" cy="95" r="52" fill="#FFFDF0"/>
+  <!-- Building -->
+  <rect x="932" y="68" width="56" height="60" rx="3" fill="#1A1A0F"/>
+  <rect x="938" y="76" width="10" height="10" rx="1" fill="#BCA402" opacity="0.8"/>
+  <rect x="952" y="76" width="10" height="10" rx="1" fill="#BCA402" opacity="0.5"/>
+  <rect x="966" y="76" width="10" height="10" rx="1" fill="#BCA402" opacity="0.3"/>
+  <rect x="938" y="92" width="10" height="10" rx="1" fill="#BCA402" opacity="0.4"/>
+  <rect x="952" y="92" width="10" height="10" rx="1" fill="#BCA402" opacity="0.7"/>
+  <rect x="966" y="92" width="10" height="10" rx="1" fill="#BCA402" opacity="0.5"/>
+  <rect x="948" y="108" width="24" height="20" rx="1" fill="#BCA402" opacity="0.25"/>
+  <text x="1090" y="60" font-family="Georgia,serif" font-size="16" font-weight="700" fill="#1A1A0F">Challenges</text>
+  <text x="1090" y="80" font-family="Georgia,serif" font-size="16" font-weight="700" fill="#1A1A0F">Corporate</text>
+  <text x="1090" y="105" font-family="sans-serif" font-size="12" fill="#999">Innovathons, hackathons</text>
+  <text x="1090" y="122" font-family="sans-serif" font-size="12" fill="#999">Gouvernance modernisée</text>
+  <rect x="1020" y="155" width="240" height="52" rx="8" fill="#FFFDF0"/>
+  <circle cx="1044" cy="181" r="10" fill="#4CAF50"/>
+  <text x="1044" y="186" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="700">✓</text>
+  <text x="1160" y="178" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#BCA402" font-weight="700">Audit complet fourni</text>
+  <text x="1160" y="196" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#AAA">Résultats infalsifiables</text>
+</svg>

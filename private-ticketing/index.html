@@ -1,0 +1,856 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TUKIO PRO Événements Privés — Mariages, anniversaires, baptêmes. Invitations digitales élégantes, gestion RSVP et liste de cadeaux intégrée."
+    />
+    <title>Événements Privés — TUKIO PRO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar" role="banner" id="navbar">
+      <nav class="nav-container" aria-label="Navigation principale">
+        <a
+          href="../home/index.html"
+          class="nav-logo"
+          aria-label="TUKIO PRO — Accueil"
+        >
+          <span class="logo-mark">T</span>
+          <span class="logo-text">TUKIO <em>PRO</em></span>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="../private-ticketing/index.html" class="nav-link active" aria-current="page">Billets de mariage</a></li>
+          <li><a href="../corporate-ticketing/index.html" class="nav-link">Billetterie</a></li>
+          <li><a href="../e-voting/index.html" class="nav-link">E-vote</a></li>
+          <li><a href="../crowdfunding/index.html" class="nav-link">Collectes</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#contact" class="btn-nav-pro">Espace pro</a>
+          <a href="#contact" class="btn-nav-login">Se connecter</a>
+          <button
+            class="hamburger"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span class="hamburger-line"></span
+            ><span class="hamburger-line"></span
+            ><span class="hamburger-line"></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <ul class="mobile-nav-links" role="list">
+          <li>
+            <a
+              href="../private-ticketing/index.html"
+              class="mobile-nav-link active"
+              >Billets de mariage</a
+            >
+          </li>
+          <li>
+            <a href="../corporate-ticketing/index.html" class="mobile-nav-link"
+              >Billetterie</a
+            >
+          </li>
+          <li>
+            <a href="../e-voting/index.html" class="mobile-nav-link">E-vote</a>
+          </li>
+          <li>
+            <a href="../crowdfunding/index.html" class="mobile-nav-link"
+              >Collectes</a
+            >
+          </li>
+        </ul>
+        <div class="mobile-nav-actions">
+          <a href="#contact" class="btn-nav-pro">Espace pro</a>
+          <a href="#contact" class="btn-nav-login">Se connecter</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="module-hero" aria-labelledby="hero-title">
+        <div class="module-hero-bg"></div>
+        <div class="module-hero-container">
+          <div class="module-hero-content">
+            <h1 class="module-hero-title" id="hero-title">
+              Célébrez.<br /><span class="accent">Inoubliablement.</span>
+            </h1>
+            <p class="module-hero-subtitle">
+              Mariage, anniversaire, baptême, cérémonie de remise de diplôme —
+              chaque moment précieux mérite une organisation irréprochable.
+              TUKIO PRO gère vos invités avec l'élégance que l'occasion exige.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn-hero-primary"
+                >Organiser ma célébration</a
+              >
+              <a href="#features" class="btn-hero-secondary"
+                >Découvrir les outils</a
+              >
+            </div>
+          </div>
+          <div class="module-hero-image">
+            <img
+              src="../images/private-usecases.svg"
+              alt="Événements privés TUKIO PRO — mariages, anniversaires, baptêmes"
+              width="560"
+              height="240"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- USE CASES (3) -->
+      <section class="usecases-section" aria-labelledby="uc-title">
+        <div class="section-container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Occasions spéciales</span>
+            <h2 class="section-title" id="uc-title">
+              Chaque célébration est unique.
+            </h2>
+            <p class="section-desc">
+              De la liste d'invités à la gestion des repas, nous gérons chaque
+              détail pour que vous profitiez pleinement de votre jour.
+            </p>
+          </div>
+          <div class="usecases-grid">
+            <div class="usecase-card reveal">
+              <div class="usecase-img-wrap">
+                <svg
+                  width="72"
+                  height="72"
+                  viewBox="0 0 72 72"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <circle cx="36" cy="36" r="36" fill="rgba(188,164,2,0.08)" />
+                  <circle
+                    cx="30"
+                    cy="36"
+                    r="14"
+                    fill="none"
+                    stroke="#BCA402"
+                    stroke-width="3"
+                  />
+                  <circle
+                    cx="42"
+                    cy="36"
+                    r="14"
+                    fill="none"
+                    stroke="#1A1A0F"
+                    stroke-width="2.5"
+                  />
+                  <circle
+                    cx="30"
+                    cy="36"
+                    r="8"
+                    fill="none"
+                    stroke="rgba(188,164,2,0.2)"
+                    stroke-width="1"
+                  />
+                  <rect
+                    x="14"
+                    y="54"
+                    width="44"
+                    height="10"
+                    rx="5"
+                    fill="#FFFDF0"
+                    stroke="rgba(188,164,2,0.2)"
+                    stroke-width="1"
+                  />
+                  <text
+                    x="36"
+                    y="62"
+                    text-anchor="middle"
+                    font-family="sans-serif"
+                    font-size="7"
+                    fill="#BCA402"
+                    font-weight="700"
+                  >
+                    Aminata &amp; David
+                  </text>
+                </svg>
+              </div>
+              <h3>Mariages &amp; Unions</h3>
+              <p>
+                Gérez votre liste d'invités, confirmations de présence, régimes
+                alimentaires et plan de table depuis un tableau de bord élégant.
+                Liste de mariage digitale avec contributions en ligne.
+              </p>
+            </div>
+            <div class="usecase-card reveal">
+              <div class="usecase-img-wrap">
+                <svg
+                  width="72"
+                  height="72"
+                  viewBox="0 0 72 72"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <circle cx="36" cy="36" r="36" fill="rgba(188,164,2,0.08)" />
+                  <rect
+                    x="22"
+                    y="42"
+                    width="28"
+                    height="18"
+                    rx="3"
+                    fill="#F5EFC0"
+                    stroke="#BCA402"
+                    stroke-width="1.5"
+                  />
+                  <rect
+                    x="22"
+                    y="42"
+                    width="28"
+                    height="8"
+                    rx="3"
+                    fill="rgba(188,164,2,0.25)"
+                  />
+                  <line
+                    x1="28"
+                    y1="42"
+                    x2="28"
+                    y2="35"
+                    stroke="rgba(188,164,2,0.5)"
+                    stroke-width="1.5"
+                  />
+                  <line
+                    x1="36"
+                    y1="42"
+                    x2="36"
+                    y2="32"
+                    stroke="rgba(188,164,2,0.6)"
+                    stroke-width="1.5"
+                  />
+                  <line
+                    x1="44"
+                    y1="42"
+                    x2="44"
+                    y2="35"
+                    stroke="rgba(188,164,2,0.5)"
+                    stroke-width="1.5"
+                  />
+                  <ellipse cx="28" cy="35" rx="2.5" ry="4" fill="#BCA402" />
+                  <ellipse cx="36" cy="32" rx="2.5" ry="4" fill="#D4B800" />
+                  <ellipse cx="44" cy="35" rx="2.5" ry="4" fill="#BCA402" />
+                  <ellipse cx="28" cy="31" rx="1.5" ry="2" fill="#FF9500" />
+                  <ellipse cx="36" cy="28" rx="1.5" ry="2" fill="#FF9500" />
+                  <ellipse cx="44" cy="31" rx="1.5" ry="2" fill="#FF9500" />
+                  <text
+                    x="20"
+                    y="26"
+                    font-family="sans-serif"
+                    font-size="10"
+                    fill="#BCA402"
+                    opacity="0.4"
+                  >
+                    ★
+                  </text>
+                  <text
+                    x="50"
+                    y="24"
+                    font-family="sans-serif"
+                    font-size="8"
+                    fill="#BCA402"
+                    opacity="0.4"
+                  >
+                    ★
+                  </text>
+                  <rect
+                    x="46"
+                    y="46"
+                    width="18"
+                    height="10"
+                    rx="3"
+                    fill="#1A1A0F"
+                  />
+                  <text
+                    x="55"
+                    y="53"
+                    text-anchor="middle"
+                    font-family="sans-serif"
+                    font-size="6"
+                    fill="#BCA402"
+                    font-weight="700"
+                  >
+                    120 invités
+                  </text>
+                </svg>
+              </div>
+              <h3>Anniversaires &amp; Galas</h3>
+              <p>
+                Créez une invitation digitale personnalisée, suivez les RSVP en
+                temps réel et envoyez des rappels automatiques. L'expérience
+                d'un événement cinq étoiles, accessible à tous.
+              </p>
+            </div>
+            <div class="usecase-card reveal">
+              <div class="usecase-img-wrap">
+                <svg
+                  width="72"
+                  height="72"
+                  viewBox="0 0 72 72"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <circle cx="36" cy="36" r="36" fill="rgba(188,164,2,0.08)" />
+                  <ellipse cx="36" cy="38" rx="16" ry="12" fill="#F0E8B0" />
+                  <circle cx="36" cy="26" r="10" fill="#E8D880" />
+                  <circle cx="32" cy="23" r="2" fill="#8A7600" />
+                  <circle cx="40" cy="23" r="2" fill="#8A7600" />
+                  <path
+                    d="M22 34 Q16 26 24 28 Q28 30 30 34"
+                    fill="#F0E8B0"
+                    stroke="#BCA402"
+                    stroke-width="1"
+                  />
+                  <path
+                    d="M50 34 Q56 26 48 28 Q44 30 42 34"
+                    fill="#F0E8B0"
+                    stroke="#BCA402"
+                    stroke-width="1"
+                  />
+                  <rect
+                    x="18"
+                    y="50"
+                    width="20"
+                    height="12"
+                    rx="5"
+                    fill="white"
+                    stroke="rgba(188,164,2,0.2)"
+                    stroke-width="1"
+                  />
+                  <text
+                    x="28"
+                    y="57"
+                    text-anchor="middle"
+                    font-family="sans-serif"
+                    font-size="6"
+                    fill="#999"
+                  >
+                    Liste de
+                  </text>
+                  <text
+                    x="28"
+                    y="62"
+                    text-anchor="middle"
+                    font-family="sans-serif"
+                    font-size="6"
+                    fill="#BCA402"
+                    font-weight="700"
+                  >
+                    naissance
+                  </text>
+                  <rect
+                    x="42"
+                    y="50"
+                    width="14"
+                    height="12"
+                    rx="5"
+                    fill="#1A1A0F"
+                  />
+                  <text
+                    x="49"
+                    y="57"
+                    text-anchor="middle"
+                    font-family="sans-serif"
+                    font-size="5"
+                    fill="rgba(255,255,255,0.5)"
+                  >
+                    Don
+                  </text>
+                  <text
+                    x="49"
+                    y="62"
+                    text-anchor="middle"
+                    font-family="sans-serif"
+                    font-size="6"
+                    fill="#BCA402"
+                    font-weight="700"
+                  >
+                    250K F
+                  </text>
+                </svg>
+              </div>
+              <h3>Baptêmes &amp; Baby Shower</h3>
+              <p>
+                Invitations sur mesure, gestion des contributions collectives
+                via une liste de naissance intégrée et confirmation de présence
+                simplifiée. Mobile Money et carte bancaire acceptés.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section
+        class="features-section"
+        id="features"
+        aria-labelledby="feat-title"
+      >
+        <div class="section-container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Fonctionnalités</span>
+            <h2 class="section-title" id="feat-title">
+              Chaque détail,<br />pris en charge.
+            </h2>
+          </div>
+          <div class="features-list">
+            <div class="feature-row reveal">
+              <div class="feature-content">
+                <div class="feature-num" aria-hidden="true">01</div>
+                <h3 class="feature-title">Invitation digitale personnalisée</h3>
+                <p class="feature-desc">
+                  Design sur mesure, photo de couple ou de famille, programme de
+                  l'événement, localisation et bouton RSVP intégré. Partageable
+                  par WhatsApp, SMS et email en un clic.
+                </p>
+              </div>
+              <div class="feature-visual" aria-hidden="true">
+                <div class="feature-card">
+                  <div class="fc-invite">
+                    <span class="fc-invite-deco">✦</span>
+                    <span class="fc-invite-subtitle">Vous êtes invité(e)</span>
+                    <span class="fc-invite-names">Aminata &amp; David</span>
+                    <span class="fc-invite-date"
+                      >Samedi 14 Juin 2025 · 15h00</span
+                    >
+                    <span style="font-size: 0.6875rem; color: #aaa"
+                      >Grand Hôtel Ivoire · Abidjan</span
+                    >
+                  </div>
+                  <div style="display: flex; gap: 0.5rem; margin-top: 0.25rem">
+                    <div class="fc-rsvp-yes" style="flex: 1">
+                      Je serai présent(e) ✓
+                    </div>
+                    <div class="fc-rsvp-no" style="flex: 1">
+                      Je ne pourrai pas
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-row feature-row--rev reveal">
+              <div class="feature-content">
+                <div class="feature-num" aria-hidden="true">02</div>
+                <h3 class="feature-title">Gestion des RSVP en temps réel</h3>
+                <p class="feature-desc">
+                  Visualisez qui a confirmé, qui n'a pas encore répondu, les
+                  régimes alimentaires et besoins spéciaux. Créez votre plan de
+                  salle directement sur la plateforme. Rappels automatiques aux
+                  non-répondants.
+                </p>
+              </div>
+              <div class="feature-visual" aria-hidden="true">
+                <div class="feature-card">
+                  <div class="fc-rsvp-stats">
+                    <div class="fc-rsvp-stat">
+                      <span class="fc-rsvp-count fc-rsvp-count--g">87</span>
+                      <span class="fc-rsvp-label">Confirmés</span>
+                    </div>
+                    <div class="fc-rsvp-stat">
+                      <span class="fc-rsvp-count fc-rsvp-count--y">34</span>
+                      <span class="fc-rsvp-label">En attente</span>
+                    </div>
+                    <div class="fc-rsvp-stat">
+                      <span class="fc-rsvp-count fc-rsvp-count--r">8</span>
+                      <span class="fc-rsvp-label">Déclinés</span>
+                    </div>
+                  </div>
+                  <div
+                    class="fc-progress-bar-wrap"
+                    style="margin-top: 0.875rem"
+                  >
+                    <div class="fc-progress-bar" style="width: 67%"></div>
+                  </div>
+                  <div class="fc-progress-meta">
+                    <span>67% de réponses reçues</span><span>129 invités</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-row reveal">
+              <div class="feature-content">
+                <div class="feature-num" aria-hidden="true">03</div>
+                <h3 class="feature-title">
+                  Liste de cadeaux &amp; contributions
+                </h3>
+                <p class="feature-desc">
+                  Permettez à vos invités de contribuer financièrement à votre
+                  liste directement depuis l'invitation. Tous moyens de paiement
+                  acceptés, même depuis la diaspora. Suivi en temps réel des
+                  montants reçus.
+                </p>
+              </div>
+              <div class="feature-visual" aria-hidden="true">
+                <div class="feature-card">
+                  <div
+                    class="fc-label"
+                    style="
+                      font-size: 0.75rem;
+                      color: #888;
+                      margin-bottom: 0.25rem;
+                    "
+                  >
+                    Liste de mariage
+                  </div>
+                  <div class="fc-stat-row">
+                    <span>Voyage de noces</span
+                    ><span class="fc-gold">320 000 FCFA</span>
+                  </div>
+                  <div class="fc-stat-row">
+                    <span>Électroménager</span><span>185 000 FCFA</span>
+                  </div>
+                  <div class="fc-stat-row">
+                    <span>Contributions reçues</span
+                    ><span class="fc-gold">44 dons</span>
+                  </div>
+                  <div class="fc-stat-row">
+                    <span>Total collecté</span
+                    ><span class="fc-gold">505 000 FCFA</span>
+                  </div>
+                  <div class="fc-btn" style="margin-top: 0.5rem">
+                    Contribuer avec amour
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section
+        class="stats-section"
+        aria-label="Statistiques événements privés"
+      >
+        <div class="section-container">
+          <div class="stats-grid" role="list">
+            <div class="stat-card reveal" role="listitem">
+              <span class="stat-number" data-target="1100">0</span
+              ><span class="stat-suffix">+</span>
+              <p class="stat-label">Événements privés organisés</p>
+              <span class="stat-change">↑ dont 350 mariages</span>
+            </div>
+            <div class="stat-card reveal" role="listitem">
+              <span class="stat-number" data-target="48000">0</span
+              ><span class="stat-suffix">+</span>
+              <p class="stat-label">Invitations envoyées</p>
+              <span class="stat-change">↑ taux d'ouverture 91%</span>
+            </div>
+            <div class="stat-card reveal" role="listitem">
+              <span class="stat-number" data-target="96">0</span
+              ><span class="stat-suffix">%</span>
+              <p class="stat-label">Satisfaction des hôtes</p>
+              <span class="stat-change">↑ recommandent TUKIO PRO</span>
+            </div>
+            <div class="stat-card reveal" role="listitem">
+              <span class="stat-number" data-target="78">0</span
+              ><span class="stat-suffix">%</span>
+              <p class="stat-label">Taux de réponse invitations</p>
+              <span class="stat-change">↑ vs 35% par WhatsApp</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="testimonials-section" aria-label="Témoignages privés">
+        <div class="section-container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Ils nous ont fait confiance</span>
+            <h2 class="section-title">Des célébrations inoubliables.</h2>
+          </div>
+          <div class="testimonials-grid">
+            <blockquote class="testimonial-card reveal">
+              <div class="testimonial-stars" aria-label="5 étoiles">★★★★★</div>
+              <p class="testimonial-text">
+                "Notre mariage avec 250 invités, géré comme jamais. Les RSVP en
+                temps réel nous ont évité les mauvaises surprises. La liste de
+                mariage digitale a été adorée par tous nos proches."
+              </p>
+              <footer class="testimonial-author">
+                <div class="author-avatar">AG</div>
+                <div class="author-info">
+                  <cite class="author-name">Aminata &amp; Gilles</cite>
+                  <span class="author-role"
+                    >Mariés · Abidjan, Côte d'Ivoire</span
+                  >
+                </div>
+              </footer>
+            </blockquote>
+            <blockquote
+              class="testimonial-card testimonial-card--featured reveal"
+            >
+              <div class="testimonial-stars" aria-label="5 étoiles">★★★★★</div>
+              <p class="testimonial-text">
+                "L'invitation digitale pour les 50 ans de mon père était
+                tellement élégante que beaucoup pensaient que c'était une vraie
+                carte imprimée. Retour en larmes de joie de tous les invités."
+              </p>
+              <footer class="testimonial-author">
+                <div class="author-avatar">YA</div>
+                <div class="author-info">
+                  <cite class="author-name">Yasmine Ait-Aomar</cite>
+                  <span class="author-role"
+                    >Organisation fête de famille · Casablanca</span
+                  >
+                </div>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial-card reveal">
+              <div class="testimonial-stars" aria-label="5 étoiles">★★★★★</div>
+              <p class="testimonial-text">
+                "Pour le baptême de ma fille, j'avais 180 invités de 5 pays
+                différents. Confirmations automatiques, contributions depuis la
+                diaspora — tout a fonctionné parfaitement."
+              </p>
+              <footer class="testimonial-author">
+                <div class="author-avatar">NC</div>
+                <div class="author-info">
+                  <cite class="author-name">Nadia Cissé</cite>
+                  <span class="author-role"
+                    >Cérémonie de baptême · Paris &amp; Douala</span
+                  >
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq-section" aria-labelledby="faq-title">
+        <div class="section-container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">FAQ</span>
+            <h2 class="section-title" id="faq-title">
+              Questions sur les événements privés.
+            </h2>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="fq-p1"
+              >
+                Mon événement privé est-il vraiment confidentiel ?<span
+                  class="faq-icon"
+                  >+</span
+                >
+              </button>
+              <div class="faq-answer" id="fq-p1" hidden>
+                <p>
+                  Absolument. Votre page n'est accessible qu'aux personnes ayant
+                  reçu le lien privé. Elle n'est pas indexée par les moteurs de
+                  recherche. Vos données et celles de vos invités sont chiffrées
+                  et ne sont jamais partagées ou revendues.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="fq-p2"
+              >
+                Puis-je créer une liste de cadeaux intégrée ?<span
+                  class="faq-icon"
+                  >+</span
+                >
+              </button>
+              <div class="faq-answer" id="fq-p2" hidden>
+                <p>
+                  Oui. Créez une liste de mariage ou de naissance directement
+                  intégrée à votre invitation. Vos invités contribuent
+                  financièrement en ligne, et vous suivez les montants reçus en
+                  temps réel depuis votre tableau de bord.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="fq-p3"
+              >
+                Mes invités à l'étranger peuvent-ils confirmer et contribuer
+                ?<span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer" id="fq-p3" hidden>
+                <p>
+                  Oui. Le RSVP est gratuit et fonctionne depuis n'importe quel
+                  pays. Pour les contributions, nous acceptons les cartes
+                  internationales (Visa/Mastercard) et virements. Votre diaspora
+                  peut vous rejoindre en quelques clics.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="fq-p4"
+              >
+                Quel est le nombre maximum d'invités ?<span class="faq-icon"
+                  >+</span
+                >
+              </button>
+              <div class="faq-answer" id="fq-p4" hidden>
+                <p>
+                  Aucune limite technique. Nous avons géré des événements privés
+                  de 10 à 800 invités. Pour les très grandes cérémonies, notre
+                  équipe vous accompagne personnellement dans la configuration.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section" id="contact" aria-labelledby="cta-title">
+        <div class="cta-bg-glow" aria-hidden="true"></div>
+        <div class="section-container">
+          <div class="cta-content">
+            <span class="cta-eyebrow">Votre grand jour mérite le meilleur</span>
+            <h2 class="cta-title" id="cta-title">
+              Créez une expérience<br />que vos invités n'oublieront pas.
+            </h2>
+            <p class="cta-desc">
+              Plus de 1 100 hôtes ont confié leur célébration à TUKIO PRO.
+              Rejoignez-les.
+            </p>
+            <div
+              class="cta-form"
+              role="form"
+              aria-label="Formulaire événement privé"
+            >
+              <label for="cta-email" class="sr-only">Votre email</label>
+              <input
+                type="email"
+                id="cta-email"
+                name="email"
+                placeholder="Votre email"
+                class="cta-input"
+                autocomplete="email"
+              />
+              <button type="submit" class="cta-submit">
+                Commencer gratuitement
+              </button>
+            </div>
+            <p class="cta-note">
+              Invitation digitale gratuite · Paiement uniquement sur
+              contribution
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="../home/index.html" class="footer-logo">
+            <span class="logo-mark">T</span
+            ><span class="logo-text">TUKIO <em>PRO</em></span>
+          </a>
+          <p class="footer-tagline">
+            La plateforme événementielle<br />pensée pour l'Afrique et le monde.
+          </p>
+          <div class="footer-socials" aria-label="Réseaux sociaux">
+            <a href="#" class="social-link" aria-label="Facebook"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                /></svg
+            ></a>
+            <a href="#" class="social-link" aria-label="Instagram"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="rgba(255,255,255,0.4)"
+                stroke-width="2"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle
+                  cx="17.5"
+                  cy="6.5"
+                  r="0.5"
+                  fill="rgba(255,255,255,0.4)"
+                /></svg
+            ></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"
+                />
+                <circle cx="4" cy="4" r="2" /></svg
+            ></a>
+          </div>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <div class="footer-col">
+            <h3 class="footer-col-title">Modules</h3>
+            <ul role="list">
+              <li>
+                <a href="../e-voting/index.html" class="footer-link">E-Vote</a>
+              </li>
+              <li>
+                <a href="../crowdfunding/index.html" class="footer-link"
+                  >Collecte de fonds</a
+                >
+              </li>
+              <li>
+                <a href="../corporate-ticketing/index.html" class="footer-link"
+                  >Billetterie Corporate</a
+                >
+              </li>
+              <li>
+                <a href="../private-ticketing/index.html" class="footer-link"
+                  >Événements Privés</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col-title">Ressources</h3>
+            <ul role="list">
+              <li><a href="#" class="footer-link">FAQ</a></li>
+              <li><a href="#contact" class="footer-link">Contact</a></li>
+              <li><a href="#" class="footer-link">Documentation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col-title">Légal</h3>
+            <ul role="list">
+              <li><a href="#" class="footer-link">Mentions légales</a></li>
+              <li><a href="#" class="footer-link">CGU</a></li>
+              <li><a href="#" class="footer-link">Confidentialité</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 TUKIO PRO. Tous droits réservés.</p>
+        <p>Module Événements Privés — Célébrations sur mesure</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

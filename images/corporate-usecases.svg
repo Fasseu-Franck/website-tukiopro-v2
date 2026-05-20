@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="240" viewBox="0 0 1280 240">
+  <defs>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="rgba(0,0,0,0.08)"/></filter>
+  </defs>
+  <!-- Card 1: Conférences -->
+  <rect x="0" y="0" width="420" height="240" rx="14" fill="white" filter="url(#sh)"/>
+  <rect x="0" y="0" width="420" height="5" rx="14" fill="#BCA402"/>
+  <circle cx="90" cy="95" r="52" fill="#FFFDF0"/>
+  <!-- Stage + speaker silhouette -->
+  <rect x="54" y="98" width="72" height="30" rx="3" fill="#1A1A0F"/>
+  <rect x="54" y="98" width="72" height="3" fill="#BCA402"/>
+  <circle cx="90" cy="87" r="8" fill="#F0E8A0"/>
+  <circle cx="90" cy="80" r="4" fill="#C4A832"/>
+  <path d="M83 95 Q90 91 97 95" fill="#C4A832"/>
+  <rect x="86" y="95" width="8" height="4" rx="1" fill="#2A2A1A"/>
+  <!-- Audience dots -->
+  <circle cx="58" cy="116" r="4" fill="#BCA402" opacity="0.6"/>
+  <circle cx="70" cy="116" r="4" fill="#BCA402" opacity="0.5"/>
+  <circle cx="82" cy="116" r="4" fill="#BCA402" opacity="0.7"/>
+  <circle cx="94" cy="116" r="4" fill="#BCA402" opacity="0.4"/>
+  <circle cx="106" cy="116" r="4" fill="#BCA402" opacity="0.6"/>
+  <!-- Badge VIP -->
+  <rect x="162" y="58" width="230" height="74" rx="10" fill="#1A1A0F"/>
+  <rect x="162" y="58" width="230" height="4" rx="10" fill="#BCA402"/>
+  <text x="277" y="84" text-anchor="middle" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.35)" letter-spacing="2">BADGE VIP</text>
+  <text x="277" y="106" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#BCA402" font-weight="700">Zone A · Accès Complet</text>
+  <text x="60" y="178" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#1A1A0F">Conférences &amp;</text>
+  <text x="60" y="198" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#BCA402">Sommets</text>
+  <text x="60" y="220" font-family="sans-serif" font-size="11" fill="#AAA">Accréditations multi-catégories</text>
+
+  <!-- Card 2: Séminaires (dark) -->
+  <rect x="430" y="0" width="420" height="240" rx="14" fill="#1A1A0F" filter="url(#sh)"/>
+  <rect x="430" y="0" width="420" height="5" rx="14" fill="#BCA402"/>
+  <circle cx="530" cy="95" r="52" fill="rgba(188,164,2,0.1)"/>
+  <!-- Whiteboard -->
+  <rect x="498" y="64" width="64" height="48" rx="5" fill="white" stroke="rgba(188,164,2,0.3)" stroke-width="1"/>
+  <line x1="506" y1="76" x2="554" y2="76" stroke="#BCA402" stroke-width="2" stroke-linecap="round"/>
+  <line x1="506" y1="84" x2="548" y2="84" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <line x1="506" y1="91" x2="550" y2="91" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <line x1="506" y1="98" x2="544" y2="98" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <text x="508" y="86" font-family="sans-serif" font-size="8" fill="#4CAF50">✓</text>
+  <text x="508" y="94" font-family="sans-serif" font-size="8" fill="#BCA402">✓</text>
+  <!-- Attendee list -->
+  <rect x="600" y="58" width="220" height="80" rx="10" fill="rgba(188,164,2,0.1)" stroke="rgba(188,164,2,0.2)" stroke-width="1"/>
+  <text x="710" y="82" text-anchor="middle" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.35)">PARTICIPANTS</text>
+  <text x="710" y="108" text-anchor="middle" font-family="Georgia,serif" font-size="24" font-weight="700" fill="#BCA402">24/30</text>
+  <text x="710" y="126" text-anchor="middle" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.35)">Inscrits confirmés</text>
+  <text x="440" y="180" font-family="Georgia,serif" font-size="15" font-weight="700" fill="white">  Séminaires &amp;</text>
+  <text x="440" y="200" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#BCA402">  Formations</text>
+  <text x="440" y="220" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.4)">  Inscriptions ciblées par équipe</text>
+
+  <!-- Card 3: Galas -->
+  <rect x="860" y="0" width="420" height="240" rx="14" fill="white" filter="url(#sh)"/>
+  <rect x="860" y="0" width="420" height="5" rx="14" fill="#BCA402"/>
+  <circle cx="960" cy="95" r="52" fill="#FFFDF0"/>
+  <!-- Champagne glasses -->
+  <path d="M946 55 L952 82 L948 86 L948 100 L940 104 L958 104" fill="none" stroke="#BCA402" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M952 82 Q948 86 946 55" fill="rgba(188,164,2,0.15)"/>
+  <path d="M974 55 L968 82 L972 86 L972 100 L964 104 L982 104" fill="none" stroke="#BCA402" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M968 82 Q972 86 974 55" fill="rgba(188,164,2,0.15)"/>
+  <!-- Bubbles -->
+  <circle cx="949" cy="70" r="1.5" fill="#BCA402" opacity="0.5"/>
+  <circle cx="952" cy="62" r="1" fill="#BCA402" opacity="0.4"/>
+  <circle cx="971" cy="67" r="1.5" fill="#BCA402" opacity="0.5"/>
+  <text x="940" y="50" font-family="sans-serif" font-size="10" fill="#BCA402" opacity="0.5">✦</text>
+  <text x="992" y="48" font-family="sans-serif" font-size="14" fill="#BCA402" opacity="0.4">✦</text>
+  <!-- VIP ticket -->
+  <rect x="1020" y="58" width="240" height="74" rx="10" fill="#1A1A0F"/>
+  <rect x="1020" y="58" width="240" height="4" rx="10" fill="#BCA402"/>
+  <text x="1140" y="84" text-anchor="middle" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.35)" letter-spacing="2">GALA ANNUEL · TABLE VIP</text>
+  <text x="1140" y="106" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#BCA402" font-weight="700">Zone Premium · Dîner inclus</text>
+  <text x="930" y="178" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#1A1A0F">Galas &amp;</text>
+  <text x="930" y="198" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#BCA402">Soirées Corporate</text>
+  <text x="930" y="220" font-family="sans-serif" font-size="11" fill="#AAA">Expérience premium pour vos invités</text>
+</svg>
