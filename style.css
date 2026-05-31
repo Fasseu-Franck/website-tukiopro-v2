@@ -1409,3 +1409,121 @@ h4 {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* =====================================================
+   ANIMATIONS — Tukio PRO v2
+   ===================================================== */
+
+/* ── Keyframes ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%       { transform: scale(1.5); opacity: 0.6; }
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── Scroll Reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Hero image float ── */
+.hero-image img {
+  animation: floatY 5s ease-in-out infinite;
+}
+
+/* ── Service icon zoom on hover ── */
+.service-card:hover .service-icon {
+  transform: scale(1.12);
+  transition: transform 0.3s ease;
+}
+
+.service-icon {
+  transition: transform 0.3s ease;
+}
+
+/* ── Stat card lift on hover ── */
+.stat-card {
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ── Step number pulse on hover ── */
+.step-item:hover .step-number-wrap {
+  transform: scale(1.08);
+  transition: transform 0.25s ease;
+}
+
+.step-number-wrap {
+  transition: transform 0.25s ease;
+}
+
+/* ── Constat illustration soft scale ── */
+.constat-image img {
+  transition: transform 0.4s ease;
+}
+
+.constat-image img:hover {
+  transform: scale(1.025);
+}
+
+/* ── Author avatar rotate-in on card hover ── */
+.testimonial-card:hover .author-avatar {
+  transform: rotate(-4deg) scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.author-avatar {
+  transition: transform 0.3s ease;
+}
+
+/* ── FAQ question chevron smooth rotation ── */
+.faq-question svg {
+  transition: transform 0.3s ease;
+}
+
+.faq-question[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}
+
+/* ── Respect reduced-motion preference ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

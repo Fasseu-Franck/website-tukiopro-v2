@@ -1317,3 +1317,61 @@ h4 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* ===== ANIMATIONS Tukio PRO v2 ===== */
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%       { transform: scale(1.5); opacity: 0.6; }
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+
+/* Override reveal with smoother easing */
+.reveal {
+  transition:
+    opacity 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+/* Hero image float */
+.module-hero-image img { animation: floatY 5s ease-in-out infinite; }
+
+/* Use-case card icon */
+.usecase-img-wrap { transition: transform 0.3s ease; }
+.usecase-card:hover .usecase-img-wrap { transform: scale(1.1) rotate(-3deg); }
+
+/* Feature visual */
+.feature-visual img,
+.feature-visual .feature-card { transition: transform 0.4s ease; }
+.feature-row:hover .feature-visual img,
+.feature-row:hover .feature-visual .feature-card { transform: scale(1.025); }
+
+/* Stat card */
+.stat-card { transition: transform 0.3s ease; }
+.stat-card:hover { transform: translateY(-4px); }
+
+/* Step number */
+.step-number-wrap { transition: transform 0.25s ease; }
+.step-item:hover .step-number-wrap { transform: scale(1.1); }
+
+/* Author avatar */
+.author-avatar { transition: transform 0.3s ease; }
+.testimonial-card:hover .author-avatar { transform: rotate(-4deg) scale(1.1); }
+
+/* FAQ chevron */
+.faq-question svg { transition: transform 0.3s ease; }
+.faq-question[aria-expanded="true"] svg { transform: rotate(180deg); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}
