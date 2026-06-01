@@ -368,6 +368,9 @@ h4 {
   color: #1a1a0f;
   margin-bottom: 1.25rem;
   animation: fadeInUp 0.5s ease 0.1s both;
+  word-break: break-word;
+  hyphens: auto;
+  max-width: 100%;
 }
 .accent {
   color: #bca402;
