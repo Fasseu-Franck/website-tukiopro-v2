@@ -1,461 +1,982 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TUKIO PRO Billetterie événementielle — Gérez vos événements grand public : concerts, festivals, matchs, salons avec un système robuste et rapide.">
-  <title>Billetterie Événementielle — TUKIO PRO</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="navbar" role="banner" id="navbar">
-    <nav class="nav-container" aria-label="Navigation principale">
-      <a href="../index.html" class="nav-logo" aria-label="TUKIO PRO — Accueil">
-        <img src="../images/Logotukio.svg" alt="TUKIO PRO" class="logo-image" />
-        <span class="logo-text-alt">TUKIO <em>PRO</em></span>
-      </a>
-      <ul class="nav-links" role="list">
-        <li><a href="../tukio-pass/index.html" class="nav-link">Tukio Pass</a></li>
-        <li><a href="../e-voting/index.html" class="nav-link">E-vote</a></li>
-        <li><a href="../crowdfunding/index.html" class="nav-link">Collect</a></li>
-        <li><a href="index.html" class="nav-link active" aria-current="page">Billetterie événementielle</a></li>
-      </ul>
-      <div class="nav-actions">
-        <a href="../signup/index.html" class="btn-nav-pro">Démarrer maintenant</a>
-        <a href="../login/index.html" class="btn-nav-login">Espace Pro</a>
-        <button class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
-          <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
-        </button>
-      </div>
-    </nav>
-    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-      <ul class="mobile-nav-links" role="list">
-        <li><a href="../tukio-pass/index.html" class="mobile-nav-link">Tukio Pass</a></li>
-        <li><a href="../e-voting/index.html" class="mobile-nav-link">E-vote</a></li>
-        <li><a href="../crowdfunding/index.html" class="mobile-nav-link">Collect</a></li>
-        <li><a href="index.html" class="mobile-nav-link active">Billetterie événementielle</a></li>
-      </ul>
-      <div class="mobile-nav-actions">
-        <a href="../signup/index.html" class="btn-nav-pro">Démarrer maintenant</a>
-        <a href="../login/index.html" class="btn-nav-login">Espace Pro</a>
-      </div>
-    </div>
-  </header>
-
-  <main id="main-content">
-
-    <!-- HERO MODULE -->
-    <section class="module-hero" aria-labelledby="hero-title">
-      <div class="module-hero-bg"></div>
-      <div class="module-hero-container">
-        <div class="module-hero-content">
-          <h1 class="module-hero-title" id="hero-title">La billetterie des <span class="accent">Grands Événements.</span></h1>
-          <p class="module-hero-subtitle">Concerts, matchs de football, festivals, spectacles et salons. Fluidifiez l'achat et l'accès pour des milliers de participants avec notre technologie de pointe.</p>
-          <div class="hero-actions">
-            <a href="#contact" class="btn-hero-primary">Créer mon événement</a>
-            <a href="#features" class="btn-hero-secondary">Voir les fonctionnalités</a>
-          </div>
-        </div>
-        <div class="module-hero-image">
-          <!-- Placeholder SVG to match other pages aesthetics -->
-          <svg width="560" height="240" viewBox="0 0 560 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="560" height="240" fill="transparent" />
-            <rect x="80" y="40" width="400" height="160" rx="12" fill="#1A1A0F" stroke="#BCA402" stroke-width="2"/>
-            <rect x="80" y="40" width="120" height="160" rx="12" fill="#BCA402"/>
-            <text x="140" y="125" font-family="Montserrat, sans-serif" font-weight="700" font-size="24" fill="#1A1A0F" text-anchor="middle" transform="rotate(-90 140 125)">FESTIVAL</text>
-            <path d="M240 80 H440 M240 120 H380 M240 160 H340" stroke="rgba(255,255,255,0.2)" stroke-width="8" stroke-linecap="round"/>
-            <circle cx="430" cy="140" r="30" fill="rgba(188,164,2,0.1)" stroke="#BCA402" stroke-width="2"/>
-            <rect x="420" y="130" width="20" height="20" fill="#BCA402"/>
-          </svg>
-        </div>
-      </div>
-    </section>
-
-    <!-- RECENT EVENTS SECTION -->
-    <section class="recent-events-section" aria-labelledby="re-title">
-      <div class="section-container">
-        <div class="section-header reveal">
-          <span class="section-eyebrow">Preuve sociale</span>
-          <h2 class="section-title" id="re-title">Événements récents</h2>
-          <p class="section-desc">Découvrez comment les plus grands organisateurs utilisent la technologie TUKIO PRO pour piloter leurs projets avec succès.</p>
-        </div>
-        <div class="events-grid">
-          <!-- Event Card 1 -->
-          <article class="event-card reveal">
-            <div class="event-img-container">
-              <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=600&q=80" alt="Festival de Musique Afrobeat" class="event-img" loading="lazy">
-              <div class="event-tag">Festival</div>
-            </div>
-            <div class="event-body">
-              <h3 class="event-card-title">Afrobeat Summer Fest</h3>
-              <div class="event-meta">
-                <span class="event-location">
-                  <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                  Esplanade du Canal, Abidjan
-                </span>
-                <span class="event-date">
-                  <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                  12-14 Août 2025
-                </span>
-              </div>
-              <p class="event-card-desc">Le plus grand festival urbain de la saison. TUKIO PRO a assuré la vente de plus de 15 000 pass et un contrôle d'accès fluide sans aucune attente.</p>
-            </div>
-          </article>
-
-          <!-- Event Card 2 -->
-          <article class="event-card reveal">
-            <div class="event-img-container">
-              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80" alt="Sommet Régional Tech" class="event-img" loading="lazy">
-              <div class="event-tag">Conférence</div>
-            </div>
-            <div class="event-body">
-              <h3 class="event-card-title">Africa Tech Summit</h3>
-              <div class="event-meta">
-                <span class="event-location">
-                  <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                  Centre des Congrès, Dakar
-                </span>
-                <span class="event-date">
-                  <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                  22 Octobre 2025
-                </span>
-              </div>
-              <p class="event-card-desc">Plus de 2 500 décideurs et investisseurs réunis. Gestion complète des inscriptions, badges VIP personnalisés et scans instantanés aux entrées.</p>
-            </div>
-          </article>
-
-          <!-- Event Card 3 -->
-          <article class="event-card reveal">
-            <div class="event-img-container">
-              <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80" alt="Concert Live" class="event-img" loading="lazy">
-              <div class="event-tag">Concert</div>
-            </div>
-            <div class="event-body">
-              <h3 class="event-card-title">Live in Abidjan</h3>
-              <div class="event-meta">
-                <span class="event-location">
-                  <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                  Palais de la Culture, Abidjan
-                </span>
-                <span class="event-date">
-                  <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                  05 Décembre 2025
-                </span>
-              </div>
-              <p class="event-card-desc">Un concert à guichet fermé avec une affluence exceptionnelle. Vente flash en ligne et guichets physiques connectés de manière synchronisée.</p>
-            </div>
-          </article>
-
-          <!-- Event Card 4 -->
-          <article class="event-card reveal">
-            <div class="event-img-container">
-              <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=600&q=80" alt="Forum des Métiers" class="event-img" loading="lazy">
-              <div class="event-tag">Salon</div>
-            </div>
-            <div class="event-body">
-              <h3 class="event-card-title">Salon de l'Emploi & Innov</h3>
-              <div class="event-meta">
-                <span class="event-location">
-                  <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                  Sofitel Hôtel Ivoire, Abidjan
-                </span>
-                <span class="event-date">
-                  <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                  18 Novembre 2025
-                </span>
-              </div>
-              <p class="event-card-desc">Le rendez-vous incontournable des talents et recruteurs. Génération et distribution d'e-tickets avec codes QR uniques pour un suivi optimal.</p>
-            </div>
-          </article>
-        </div>
-        
-        <div class="events-cta reveal">
-          <a href="../signup/index.html" class="btn-events-cta">Démarrer maintenant</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- USECASES (3 only with images) -->
-    <section class="usecases-section" aria-labelledby="uc-title">
-      <div class="section-container">
-        <div class="section-header reveal">
-          <span class="section-eyebrow">Pour qui ?</span>
-          <h2 class="section-title" id="uc-title">Adapté à tous les grands rassemblements.</h2>
-        </div>
-        <div class="usecases-grid">
-          <div class="usecase-card reveal">
-            <div class="usecase-img-wrap">
-              <svg width="72" height="72" viewBox="0 0 72 72" fill="none" aria-hidden="true">
-                <circle cx="36" cy="36" r="36" fill="rgba(188,164,2,0.1)"/>
-                <path d="M26 46 V30 Q36 20 46 30 V46 Z" fill="#1A1A0F" stroke="#BCA402" stroke-width="2"/>
-                <circle cx="36" cy="38" r="4" fill="#BCA402"/>
-              </svg>
-            </div>
-            <h3>Concerts &amp; Festivals</h3>
-            <p>Vendez des milliers de billets en quelques minutes sans crash. Scans ultra-rapides aux portes pour éviter les files d'attente sous la chaleur ou la pluie.</p>
-          </div>
-          <div class="usecase-card reveal">
-            <div class="usecase-img-wrap">
-              <svg width="72" height="72" viewBox="0 0 72 72" fill="none" aria-hidden="true">
-                <circle cx="36" cy="36" r="36" fill="rgba(188,164,2,0.1)"/>
-                <circle cx="36" cy="36" r="16" fill="none" stroke="#BCA402" stroke-width="2"/>
-                <path d="M24 28 L48 44 M24 44 L48 28 M36 20 V52" stroke="#BCA402" stroke-width="1.5" opacity="0.6"/>
-              </svg>
-            </div>
-            <h3>Matchs &amp; Événements Sportifs</h3>
-            <p>Gérez vos gradins, zones VIP et virages avec une tarification dynamique. Contrôle d'accès robuste, même avec une mauvaise connexion internet aux abords du stade.</p>
-          </div>
-          <div class="usecase-card reveal">
-            <div class="usecase-img-wrap">
-              <svg width="72" height="72" viewBox="0 0 72 72" fill="none" aria-hidden="true">
-                <circle cx="36" cy="36" r="36" fill="rgba(188,164,2,0.1)"/>
-                <rect x="22" y="26" width="28" height="20" rx="2" fill="#BCA402"/>
-                <rect x="28" y="20" width="16" height="6" rx="2" fill="#1A1A0F"/>
-                <path d="M30 32 H42 M30 38 H38" stroke="#1A1A0F" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <h3>Salons &amp; Expositions</h3>
-            <p>Inscriptions gratuites ou payantes, impression de badges sur place, et suivi des exposants. Une expérience professionnelle pour le grand public.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section class="features-section" id="features" aria-labelledby="feat-title">
-      <div class="section-container">
-        <div class="section-header reveal">
-          <span class="section-eyebrow">Fonctionnalités</span>
-          <h2 class="section-title" id="feat-title">Taillé pour les grands volumes.</h2>
-        </div>
-        <div class="features-list">
-          <div class="feature-row reveal">
-            <div class="feature-content">
-              <div class="feature-num" aria-hidden="true">01</div>
-              <h3 class="feature-title">Achat rapide & Multi-paiement</h3>
-              <p class="feature-desc">Vos spectateurs achètent leurs tickets en 3 clics. Nous supportons le Mobile Money, les cartes bancaires et les paiements en espèces via nos partenaires.</p>
-            </div>
-            <div class="feature-visual" aria-hidden="true">
-              <div class="feature-card">
-                <div class="fc-label">Paiement Mobile Money</div>
-                <div class="fc-bar-wrap"><div class="fc-bar" style="width:100%"></div></div>
-                <div class="fc-meta"><span class="fc-val">Instantané</span><span class="fc-pct">Sécurisé</span></div>
-                <div class="fc-btn">Valider le paiement</div>
-              </div>
-            </div>
-          </div>
-          <div class="feature-row feature-row--rev reveal">
-            <div class="feature-content">
-              <div class="feature-num" aria-hidden="true">02</div>
-              <h3 class="feature-title">Contrôle d'accès massif</h3>
-              <p class="feature-desc">Une application de scan qui valide les QR codes en un éclair, même hors-ligne. Synchronisation automatique de toutes les entrées pour empêcher la fraude et les doublons.</p>
-            </div>
-            <div class="feature-visual" aria-hidden="true">
-              <div class="feature-card">
-                <div class="fc-chart">
-                  <div class="fc-bar-v" style="height:90%"><span>90%</span></div>
-                  <div class="fc-bar-v fc-bar-v--b" style="height:70%"><span>70%</span></div>
-                  <div class="fc-bar-v fc-bar-v--c" style="height:40%"><span>40%</span></div>
-                </div>
-                <div class="fc-live-badge">● 450 scans / minute</div>
-              </div>
-            </div>
-          </div>
-          <div class="feature-row reveal">
-            <div class="feature-content">
-              <div class="feature-num" aria-hidden="true">03</div>
-              <h3 class="feature-title">Analyses et Jauges en direct</h3>
-              <p class="feature-desc">Visualisez le remplissage de votre événement en temps réel. Adaptez vos flux d'entrée et vos effectifs de sécurité selon l'affluence mesurée à la seconde près.</p>
-            </div>
-            <div class="feature-visual" aria-hidden="true">
-              <div class="feature-card">
-                <div class="fc-stat-row"><span>Billets vendus</span><span class="fc-gold">14 500</span></div>
-                <div class="fc-stat-row"><span>Scans validés</span><span>12 300</span></div>
-                <div class="fc-stat-row"><span>Jauge atteinte</span><span class="fc-gold">85%</span></div>
-                <div class="fc-btn">Voir le tableau de bord</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- STATS -->
-    <section class="stats-section" aria-label="Statistiques Billetterie">
-      <div class="section-container">
-        <div class="stats-grid" role="list">
-          <div class="stat-card reveal" role="listitem">
-            <span class="stat-number">250000</span><span class="stat-suffix">+</span>
-            <p class="stat-label">Billets émis</p>
-            <span class="stat-change">↑ en croissance</span>
-          </div>
-          <div class="stat-card reveal" role="listitem">
-            <span class="stat-number">100</span><span class="stat-suffix">%</span>
-            <p class="stat-label">Fiabilité des scans</p>
-            <span class="stat-change">↑ 0 faux positif</span>
-          </div>
-          <div class="stat-card reveal" role="listitem">
-            <span class="stat-number">99</span><span class="stat-suffix">.9%</span>
-            <p class="stat-label">Uptime serveurs</p>
-            <span class="stat-change">↑ Anti-crash</span>
-          </div>
-          <div class="stat-card reveal" role="listitem">
-            <span class="stat-number">1</span><span class="stat-suffix">s</span>
-            <p class="stat-label">Temps moyen de scan</p>
-            <span class="stat-change">↑ Fluidité maximale</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="testimonials-section" aria-label="Témoignages Billetterie">
-      <div class="section-container">
-        <div class="section-header reveal">
-          <span class="section-eyebrow">Ils l'ont fait</span>
-          <h2 class="section-title">Ils nous font confiance.</h2>
-        </div>
-        <div class="testimonials-grid">
-          <blockquote class="testimonial-card reveal">
-            <div class="testimonial-stars" aria-label="5 étoiles">★★★★★</div>
-            <p class="testimonial-text">"Gérer les entrées pour 15 000 personnes a toujours été notre angoisse. Avec TUKIO PRO, le scan hors-ligne a absorbé la foule sans aucun ralentissement."</p>
-            <footer class="testimonial-author">
-              <div class="author-avatar">MC</div>
-              <div class="author-info">
-               <cite class="author-name">Marc Coulibaly</cite>
-                <span class="author-role">Directeur de Festival</span>
-              </div>
-            </footer>
-          </blockquote>
-          <blockquote class="testimonial-card testimonial-card--featured reveal">
-            <div class="testimonial-stars" aria-label="5 étoiles">★★★★★</div>
-            <p class="testimonial-text">"La possibilité de payer par Mobile Money a boosté nos préventes de 40%. Nos supporters adorent la simplicité, et nous adorons la sécurité."</p>
-            <footer class="testimonial-author">
-              <div class="author-avatar">SD</div>
-              <div class="author-info">
-                <cite class="author-name">Sarah Diop</cite>
-                <span class="author-role">Promotrice Événementiel Sportif</span>
-              </div>
-            </footer>
-          </blockquote>
-          <blockquote class="testimonial-card reveal">
-            <div class="testimonial-stars" aria-label="5 étoiles">★★★★★</div>
-            <p class="testimonial-text">"Le tableau de bord en temps réel nous permet d'envoyer nos agents de sécurité là où les entrées s'intensifient. Une vision claire et indispensable."</p>
-            <footer class="testimonial-author">
-              <div class="author-avatar">EK</div>
-              <div class="author-info">
-                <cite class="author-name">Eric Kassi</cite>
-                <span class="author-role">Régisseur Général</span>
-              </div>
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq-section" aria-labelledby="faq-title">
-      <div class="section-container">
-        <div class="section-header reveal">
-          <span class="section-eyebrow">FAQ</span>
-          <h2 class="section-title" id="faq-title">Questions fréquentes.</h2>
-        </div>
-        <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false" aria-controls="fq1">Comment gérez-vous la fraude et les faux billets ?<span class="faq-icon">+</span></button>
-            <div class="faq-answer" id="fq1" hidden><p>Chaque billet contient un QR code unique crypté. Dès qu'il est scanné une fois, il est invalidé dans notre base. L'application de scan détecte immédiatement les doublons.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false" aria-controls="fq2">Le système résiste-t-il aux pics de connexion ?<span class="faq-icon">+</span></button>
-            <div class="faq-answer" id="fq2" hidden><p>Oui, notre infrastructure est conçue pour la haute disponibilité. Lors des ouvertures de billetterie très attendues, nous mettons en place des files d'attente virtuelles automatisées.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false" aria-controls="fq3">Puis-je vendre des billets sur place le jour J ?<span class="faq-icon">+</span></button>
-            <div class="faq-answer" id="fq3" hidden><p>Absolument. Vous pouvez utiliser notre application "Guichet" pour vendre des billets physiques ou numériques directement à l'entrée, avec impression thermique possible.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false" aria-controls="fq4">Quels sont vos frais sur les billets ?<span class="faq-icon">+</span></button>
-            <div class="faq-answer" id="fq4" hidden><p>Nous appliquons une commission transparente par billet vendu, qui varie selon le volume de votre événement. Aucun frais fixe ni frais d'installation cachés.</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-section" id="contact" aria-labelledby="cta-title">
-      <div class="cta-bg-glow" aria-hidden="true"></div>
-      <div class="section-container">
-        <div class="cta-content">
-          <span class="cta-eyebrow">Prêt à remplir vos salles ?</span>
-          <h2 class="cta-title" id="cta-title">Lancez votre billetterie,<br>en toute sérénité.</h2>
-          <p class="cta-desc">Rejoignez les organisateurs qui ont choisi TUKIO PRO pour leurs grands événements.</p>
-          <div style="margin-top: 2rem;">
-            <a href="../signup/index.html" class="btn-hero-primary" style="font-size: 1.125rem; padding: 1.125rem 2.5rem; text-align: center; display: inline-block;">Démarrer votre billetterie maintenant</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer-container">
-      <div class="footer-brand">
-        <a href="../index.html" class="footer-logo">
-          <img src="../images/Logotukio.svg" alt="TUKIO PRO" class="logo-image" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TUKIO PRO Billetterie événementielle — Gérez vos événements grand public : concerts, festivals, matchs, salons avec un système robuste et rapide."
+    />
+    <title>Billetterie Événementielle — TUKIO PRO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar" role="banner" id="navbar">
+      <nav class="nav-container" aria-label="Navigation principale">
+        <a
+          href="../index.html"
+          class="nav-logo"
+          aria-label="TUKIO PRO — Accueil"
+        >
+          <img
+            src="../images/Logotukio.svg"
+            alt="TUKIO PRO"
+            class="logo-image"
+          />
           <span class="logo-text-alt">TUKIO <em>PRO</em></span>
         </a>
-        <p class="footer-tagline">La plateforme événementielle<br>pensée pour l'Afrique et le monde.</p>
-                <div class="footer-socials" aria-label="Réseaux sociaux">
-          <a href="#" class="social-link" aria-label="Facebook">
-            <svg viewBox="0 0 320 512" fill="currentColor"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
-          </a>
-          <a href="#" class="social-link" aria-label="Instagram">
-            <svg viewBox="0 0 448 512" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-          </a>
-          <a href="#" class="social-link" aria-label="LinkedIn">
-            <svg viewBox="0 0 448 512" fill="currentColor"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
-          </a>
-          <a href="#" class="social-link" aria-label="X (Twitter)">
-            <svg viewBox="0 0 512 512" fill="currentColor"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
-          </a>
-        </div>
-      </div>
-      <nav class="footer-nav" aria-label="Footer">
-        <div class="footer-col">
-          <h3 class="footer-col-title">Modules</h3>
-          <ul role="list">
-            <li><a href="../tukio-pass/index.html" class="footer-link">Tukio Pass</a></li>
-            <li><a href="../e-voting/index.html" class="footer-link">E-vote</a></li>
-            <li><a href="../crowdfunding/index.html" class="footer-link">Collect</a></li>
-            <li><a href="index.html" class="footer-link">Billetterie événementielle</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3 class="footer-col-title">Ressources</h3>
-          <ul role="list">
-            <li><a href="#" class="footer-link">FAQ</a></li>
-            <li><a href="#contact" class="footer-link">Contact</a></li>
-            <li><a href="#" class="footer-link">Documentation</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3 class="footer-col-title">Légal</h3>
-          <ul role="list">
-            <li><a href="../cgu/index.html" class="footer-link">Mentions légales</a></li>
-            <li><a href="../cgu/index.html" class="footer-link">CGU</a></li>
-            <li><a href="../privacy/index.html" class="footer-link">Confidentialité</a></li>
-          </ul>
+        <ul class="nav-links" role="list">
+          <li>
+            <a href="../tukio-pass/index.html" class="nav-link">Tukio Pass</a>
+          </li>
+          <li><a href="../e-voting/index.html" class="nav-link">E-vote</a></li>
+          <li>
+            <a href="../crowdfunding/index.html" class="nav-link">Collect</a>
+          </li>
+          <li>
+            <a href="index.html" class="nav-link active" aria-current="page"
+              >Billetterie événementielle</a
+            >
+          </li>
+        </ul>
+        <div class="nav-actions">
+          <a href="../signup/index.html" class="btn-nav-pro"
+            >Démarrer maintenant</a
+          >
+          <a href="../login/index.html" class="btn-nav-login">Espace Pro</a>
+          <button
+            class="hamburger"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span class="hamburger-line"></span
+            ><span class="hamburger-line"></span
+            ><span class="hamburger-line"></span>
+          </button>
         </div>
       </nav>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 TUKIO PRO. Tous droits réservés.</p>
-      <p>Module Billetterie Événementielle</p>
-    </div>
-  </footer>
-  <script src="script.js"></script>
-</body>
+      <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <ul class="mobile-nav-links" role="list">
+          <li>
+            <a href="../tukio-pass/index.html" class="mobile-nav-link"
+              >Tukio Pass</a
+            >
+          </li>
+          <li>
+            <a href="../e-voting/index.html" class="mobile-nav-link">E-vote</a>
+          </li>
+          <li>
+            <a href="../crowdfunding/index.html" class="mobile-nav-link"
+              >Collect</a
+            >
+          </li>
+          <li>
+            <a href="index.html" class="mobile-nav-link active"
+              >Billetterie événementielle</a
+            >
+          </li>
+        </ul>
+        <div class="mobile-nav-actions">
+          <a href="../signup/index.html" class="btn-nav-pro"
+            >Démarrer maintenant</a
+          >
+          <a href="../login/index.html" class="btn-nav-login">Espace Pro</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- HERO MODULE -->
+      <section class="module-hero" aria-labelledby="hero-title">
+        <div class="module-hero-bg"></div>
+        <div class="module-hero-container">
+          <div class="module-hero-content">
+            <h1 class="module-hero-title" id="hero-title">
+              La billetterie des <br /><span class="accent"
+                >Grands Événements.</span
+              >
+            </h1>
+            <p class="module-hero-subtitle">
+              Concerts, matchs de football, festivals, spectacles et salons.
+              Fluidifiez l'achat et l'accès pour des milliers de participants
+              avec notre technologie de pointe.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn-hero-primary"
+                >Créer mon événement</a
+              >
+              <a href="#features" class="btn-hero-secondary"
+                >Voir les fonctionnalités</a
+              >
+            </div>
+          </div>
+          <div class="module-hero-image">
+            <!-- Placeholder SVG to match other pages aesthetics -->
+            <svg
+              width="560"
+              height="240"
+              viewBox="0 0 560 240"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="560" height="240" fill="transparent" />
+              <rect
+                x="80"
+                y="40"
+                width="400"
+                height="160"
+                rx="12"
+                fill="#1A1A0F"
+                stroke="#BCA402"
+                stroke-width="2"
+              />
+              <rect
+                x="80"
+                y="40"
+                width="120"
+                height="160"
+                rx="12"
+                fill="#BCA402"
+              />
+              <text
+                x="140"
+                y="125"
+                font-family="Montserrat, sans-serif"
+                font-weight="700"
+                font-size="24"
+                fill="#1A1A0F"
+                text-anchor="middle"
+                transform="rotate(-90 140 125)"
+              >
+                FESTIVAL
+              </text>
+              <path
+                d="M240 80 H440 M240 120 H380 M240 160 H340"
+                stroke="rgba(255,255,255,0.2)"
+                stroke-width="8"
+                stroke-linecap="round"
+              />
+              <circle
+                cx="430"
+                cy="140"
+                r="30"
+                fill="rgba(188,164,2,0.1)"
+                stroke="#BCA402"
+                stroke-width="2"
+              />
+              <rect x="420" y="130" width="20" height="20" fill="#BCA402" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- RECENT EVENTS SECTION -->
+      <section class="recent-events-section" aria-labelledby="re-title">
+        <div class="section-container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Preuve sociale</span>
+            <h2 class="section-title" id="re-title">Événements récents</h2>
+            <p class="section-desc">
+              Découvrez comment les plus grands organisateurs utilisent la
+              technologie TUKIO PRO pour piloter leurs projets avec succès.
+            </p>
+          </div>
+          <div class="events-grid">
+            <!-- Event Card 1 -->
+            <article class="event-card reveal">
+              <div class="event-img-container">
+                <img
+                  src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=600&q=80"
+                  alt="Festival de Musique Afrobeat"
+                  class="event-img"
+                  loading="lazy"
+                />
+                <div class="event-tag">Festival</div>
+              </div>
+              <div class="event-body">
+                <h3 class="event-card-title">Afrobeat Summer Fest</h3>
+                <div class="event-meta">
+                  <span class="event-location">
+                    <svg
+                      class="meta-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      ></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Esplanade du Canal, Abidjan
+                  </span>
+                  <span class="event-date">
+                    <svg
+                      class="meta-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect
+                        x="3"
+                        y="4"
+                        width="18"
+                        height="18"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    12-14 Août 2025
+                  </span>
+                </div>
+                <p class="event-card-desc">
+                  Le plus grand festival urbain de la saison. TUKIO PRO a assuré
+                  la vente de plus de 15 000 pass et un contrôle d'accès fluide
+                  sans aucune attente.
+                </p>
+              </div>
+            </article>
+
+            <!-- Event Card 2 -->
+            <article class="event-card reveal">
+              <div class="event-img-container">
+                <img
+                  src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80"
+                  alt="Sommet Régional Tech"
+                  class="event-img"
+                  loading="lazy"
+                />
+                <div class="event-tag">Conférence</div>
+              </div>
+              <div class="event-body">
+                <h3 class="event-card-title">Africa Tech Summit</h3>
+                <div class="event-meta">
+                  <span class="event-location">
+                    <svg
+                      class="meta-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      ></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Centre des Congrès, Dakar
+                  </span>
+                  <span class="event-date">
+                    <svg
+                      class="meta-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect
+                        x="3"
+                        y="4"
+                        width="18"
+                        height="18"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    22 Octobre 2025
+                  </span>
+                </div>
+                <p class="event-card-desc">
+                  Plus de 2 500 décideurs et investisseurs réunis. Gestion
+                  complète des inscriptions, badges VIP personnalisés et scans
+                  instantanés aux entrées.
+                </p>
+              </div>
+            </article>
+
+            <!-- Event Card 3 -->
+            <article class="event-card reveal">
+              <div class="event-img-container">
+                <img
+                  src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80"
+                  alt="Concert Live"
+                  class="event-img"
+                  loading="lazy"
+                />
+                <div class="event-tag">Concert</div>
+              </div>
+              <div class="event-body">
+                <h3 class="event-card-title">Live in Abidjan</h3>
+                <div class="event-meta">
+                  <span class="event-location">
+                    <svg
+                      class="meta-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      ></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Palais de la Culture, Abidjan
+                  </span>
+                  <span class="event-date">
+                    <svg
+                      class="meta-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect
+                        x="3"
+                        y="4"
+                        width="18"
+                        height="18"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    05 Décembre 2025
+                  </span>
+                </div>
+                <p class="event-card-desc">
+                  Un concert à guichet fermé avec une affluence exceptionnelle.
+                  Vente flash en ligne et guichets physiques connectés de
+                  manière synchronisée.
+                </p>
+              </div>
+            </article>
+
+            <!-- Event Card 4 -->
+            <article class="event-card reveal">
+              <div class="event-img-container">
+                <img
+                  src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=600&q=80"
+                  alt="Forum des Métiers"
+                  class="event-img"
+                  loading="lazy"
+                />
+                <div class="event-tag">Salon</div>
+              </div>
+              <div class="event-body">
+                <h3 class="event-card-title">Salon de l'Emploi & Innov</h3>
+                <div class="event-meta">
+                  <span class="event-location">
+                    <svg
+                      class="meta-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      ></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Sofitel Hôtel Ivoire, Abidjan
+                  </span>
+                  <span class="event-date">
+                    <svg
+                      class="meta-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect
+                        x="3"
+                        y="4"
+                        width="18"
+                        height="18"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    18 Novembre 2025
+                  </span>
+                </div>
+                <p class="event-card-desc">
+                  Le rendez-vous incontournable des talents et recruteurs.
+                  Génération et distribution d'e-tickets avec codes QR uniques
+                  pour un suivi optimal.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="events-cta reveal">
+            <a href="../signup/index.html" class="btn-events-cta"
+              >Démarrer maintenant</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- USECASES (3 only with images) -->
+      <section class="usecases-section" aria-labelledby="uc-title">
+        <div class="section-container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Pour qui ?</span>
+            <h2 class="section-title" id="uc-title">
+              Adapté à tous les grands rassemblements.
+            </h2>
+          </div>
+          <div class="usecases-grid">
+            <div class="usecase-card reveal">
+              <div class="usecase-img-wrap">
+                <svg
+                  width="72"
+                  height="72"
+                  viewBox="0 0 72 72"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <circle cx="36" cy="36" r="36" fill="rgba(188,164,2,0.1)" />
+                  <path
+                    d="M26 46 V30 Q36 20 46 30 V46 Z"
+                    fill="#1A1A0F"
+                    stroke="#BCA402"
+                    stroke-width="2"
+                  />
+                  <circle cx="36" cy="38" r="4" fill="#BCA402" />
+                </svg>
+              </div>
+              <h3>Concerts &amp; Festivals</h3>
+              <p>
+                Vendez des milliers de billets en quelques minutes sans crash.
+                Scans ultra-rapides aux portes pour éviter les files d'attente
+                sous la chaleur ou la pluie.
+              </p>
+            </div>
+            <div class="usecase-card reveal">
+              <div class="usecase-img-wrap">
+                <svg
+                  width="72"
+                  height="72"
+                  viewBox="0 0 72 72"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <circle cx="36" cy="36" r="36" fill="rgba(188,164,2,0.1)" />
+                  <circle
+                    cx="36"
+                    cy="36"
+                    r="16"
+                    fill="none"
+                    stroke="#BCA402"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M24 28 L48 44 M24 44 L48 28 M36 20 V52"
+                    stroke="#BCA402"
+                    stroke-width="1.5"
+                    opacity="0.6"
+                  />
+                </svg>
+              </div>
+              <h3>Matchs &amp; Événements Sportifs</h3>
+              <p>
+                Gérez vos gradins, zones VIP et virages avec une tarification
+                dynamique. Contrôle d'accès robuste, même avec une mauvaise
+                connexion internet aux abords du stade.
+              </p>
+            </div>
+            <div class="usecase-card reveal">
+              <div class="usecase-img-wrap">
+                <svg
+                  width="72"
+                  height="72"
+                  viewBox="0 0 72 72"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <circle cx="36" cy="36" r="36" fill="rgba(188,164,2,0.1)" />
+                  <rect
+                    x="22"
+                    y="26"
+                    width="28"
+                    height="20"
+                    rx="2"
+                    fill="#BCA402"
+                  />
+                  <rect
+                    x="28"
+                    y="20"
+                    width="16"
+                    height="6"
+                    rx="2"
+                    fill="#1A1A0F"
+                  />
+                  <path
+                    d="M30 32 H42 M30 38 H38"
+                    stroke="#1A1A0F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3>Salons &amp; Expositions</h3>
+              <p>
+                Inscriptions gratuites ou payantes, impression de badges sur
+                place, et suivi des exposants. Une expérience professionnelle
+                pour le grand public.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section
+        class="features-section"
+        id="features"
+        aria-labelledby="feat-title"
+      >
+        <div class="section-container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Fonctionnalités</span>
+            <h2 class="section-title" id="feat-title">
+              Taillé pour les grands volumes.
+            </h2>
+          </div>
+          <div class="features-list">
+            <div class="feature-row reveal">
+              <div class="feature-content">
+                <div class="feature-num" aria-hidden="true">01</div>
+                <h3 class="feature-title">Achat rapide & Multi-paiement</h3>
+                <p class="feature-desc">
+                  Vos spectateurs achètent leurs tickets en 3 clics. Nous
+                  supportons le Mobile Money, les cartes bancaires et les
+                  paiements en espèces via nos partenaires.
+                </p>
+              </div>
+              <div class="feature-visual" aria-hidden="true">
+                <div class="feature-card">
+                  <div class="fc-label">Paiement Mobile Money</div>
+                  <div class="fc-bar-wrap">
+                    <div class="fc-bar" style="width: 100%"></div>
+                  </div>
+                  <div class="fc-meta">
+                    <span class="fc-val">Instantané</span
+                    ><span class="fc-pct">Sécurisé</span>
+                  </div>
+                  <div class="fc-btn">Valider le paiement</div>
+                </div>
+              </div>
+            </div>
+            <div class="feature-row feature-row--rev reveal">
+              <div class="feature-content">
+                <div class="feature-num" aria-hidden="true">02</div>
+                <h3 class="feature-title">Contrôle d'accès massif</h3>
+                <p class="feature-desc">
+                  Une application de scan qui valide les QR codes en un éclair,
+                  même hors-ligne. Synchronisation automatique de toutes les
+                  entrées pour empêcher la fraude et les doublons.
+                </p>
+              </div>
+              <div class="feature-visual" aria-hidden="true">
+                <div class="feature-card">
+                  <div class="fc-chart">
+                    <div class="fc-bar-v" style="height: 90%">
+                      <span>90%</span>
+                    </div>
+                    <div class="fc-bar-v fc-bar-v--b" style="height: 70%">
+                      <span>70%</span>
+                    </div>
+                    <div class="fc-bar-v fc-bar-v--c" style="height: 40%">
+                      <span>40%</span>
+                    </div>
+                  </div>
+                  <div class="fc-live-badge">● 450 scans / minute</div>
+                </div>
+              </div>
+            </div>
+            <div class="feature-row reveal">
+              <div class="feature-content">
+                <div class="feature-num" aria-hidden="true">03</div>
+                <h3 class="feature-title">Analyses et Jauges en direct</h3>
+                <p class="feature-desc">
+                  Visualisez le remplissage de votre événement en temps réel.
+                  Adaptez vos flux d'entrée et vos effectifs de sécurité selon
+                  l'affluence mesurée à la seconde près.
+                </p>
+              </div>
+              <div class="feature-visual" aria-hidden="true">
+                <div class="feature-card">
+                  <div class="fc-stat-row">
+                    <span>Billets vendus</span
+                    ><span class="fc-gold">14 500</span>
+                  </div>
+                  <div class="fc-stat-row">
+                    <span>Scans validés</span><span>12 300</span>
+                  </div>
+                  <div class="fc-stat-row">
+                    <span>Jauge atteinte</span><span class="fc-gold">85%</span>
+                  </div>
+                  <div class="fc-btn">Voir le tableau de bord</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="stats-section" aria-label="Statistiques Billetterie">
+        <div class="section-container">
+          <div class="stats-grid" role="list">
+            <div class="stat-card reveal" role="listitem">
+              <span class="stat-number">250000</span
+              ><span class="stat-suffix">+</span>
+              <p class="stat-label">Billets émis</p>
+              <span class="stat-change">↑ en croissance</span>
+            </div>
+            <div class="stat-card reveal" role="listitem">
+              <span class="stat-number">100</span
+              ><span class="stat-suffix">%</span>
+              <p class="stat-label">Fiabilité des scans</p>
+              <span class="stat-change">↑ 0 faux positif</span>
+            </div>
+            <div class="stat-card reveal" role="listitem">
+              <span class="stat-number">99</span
+              ><span class="stat-suffix">.9%</span>
+              <p class="stat-label">Uptime serveurs</p>
+              <span class="stat-change">↑ Anti-crash</span>
+            </div>
+            <div class="stat-card reveal" role="listitem">
+              <span class="stat-number">1</span
+              ><span class="stat-suffix">s</span>
+              <p class="stat-label">Temps moyen de scan</p>
+              <span class="stat-change">↑ Fluidité maximale</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section
+        class="testimonials-section"
+        aria-label="Témoignages Billetterie"
+      >
+        <div class="section-container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Ils l'ont fait</span>
+            <h2 class="section-title">Ils nous font confiance.</h2>
+          </div>
+          <div class="testimonials-grid">
+            <blockquote class="testimonial-card reveal">
+              <div class="testimonial-stars" aria-label="5 étoiles">★★★★★</div>
+              <p class="testimonial-text">
+                "Gérer les entrées pour 15 000 personnes a toujours été notre
+                angoisse. Avec TUKIO PRO, le scan hors-ligne a absorbé la foule
+                sans aucun ralentissement."
+              </p>
+              <footer class="testimonial-author">
+                <div class="author-avatar">MC</div>
+                <div class="author-info">
+                  <cite class="author-name">Marc Coulibaly</cite>
+                  <span class="author-role">Directeur de Festival</span>
+                </div>
+              </footer>
+            </blockquote>
+            <blockquote
+              class="testimonial-card testimonial-card--featured reveal"
+            >
+              <div class="testimonial-stars" aria-label="5 étoiles">★★★★★</div>
+              <p class="testimonial-text">
+                "La possibilité de payer par Mobile Money a boosté nos préventes
+                de 40%. Nos supporters adorent la simplicité, et nous adorons la
+                sécurité."
+              </p>
+              <footer class="testimonial-author">
+                <div class="author-avatar">SD</div>
+                <div class="author-info">
+                  <cite class="author-name">Sarah Diop</cite>
+                  <span class="author-role"
+                    >Promotrice Événementiel Sportif</span
+                  >
+                </div>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial-card reveal">
+              <div class="testimonial-stars" aria-label="5 étoiles">★★★★★</div>
+              <p class="testimonial-text">
+                "Le tableau de bord en temps réel nous permet d'envoyer nos
+                agents de sécurité là où les entrées s'intensifient. Une vision
+                claire et indispensable."
+              </p>
+              <footer class="testimonial-author">
+                <div class="author-avatar">EK</div>
+                <div class="author-info">
+                  <cite class="author-name">Eric Kassi</cite>
+                  <span class="author-role">Régisseur Général</span>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq-section" aria-labelledby="faq-title">
+        <div class="section-container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">FAQ</span>
+            <h2 class="section-title" id="faq-title">Questions fréquentes.</h2>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="fq1"
+              >
+                Comment gérez-vous la fraude et les faux billets ?<span
+                  class="faq-icon"
+                  >+</span
+                >
+              </button>
+              <div class="faq-answer" id="fq1" hidden>
+                <p>
+                  Chaque billet contient un QR code unique crypté. Dès qu'il est
+                  scanné une fois, il est invalidé dans notre base.
+                  L'application de scan détecte immédiatement les doublons.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="fq2"
+              >
+                Le système résiste-t-il aux pics de connexion ?<span
+                  class="faq-icon"
+                  >+</span
+                >
+              </button>
+              <div class="faq-answer" id="fq2" hidden>
+                <p>
+                  Oui, notre infrastructure est conçue pour la haute
+                  disponibilité. Lors des ouvertures de billetterie très
+                  attendues, nous mettons en place des files d'attente
+                  virtuelles automatisées.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="fq3"
+              >
+                Puis-je vendre des billets sur place le jour J ?<span
+                  class="faq-icon"
+                  >+</span
+                >
+              </button>
+              <div class="faq-answer" id="fq3" hidden>
+                <p>
+                  Absolument. Vous pouvez utiliser notre application "Guichet"
+                  pour vendre des billets physiques ou numériques directement à
+                  l'entrée, avec impression thermique possible.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="fq4"
+              >
+                Quels sont vos frais sur les billets ?<span class="faq-icon"
+                  >+</span
+                >
+              </button>
+              <div class="faq-answer" id="fq4" hidden>
+                <p>
+                  Nous appliquons une commission transparente par billet vendu,
+                  qui varie selon le volume de votre événement. Aucun frais fixe
+                  ni frais d'installation cachés.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-section" id="contact" aria-labelledby="cta-title">
+        <div class="cta-bg-glow" aria-hidden="true"></div>
+        <div class="section-container">
+          <div class="cta-content">
+            <span class="cta-eyebrow">Prêt à remplir vos salles ?</span>
+            <h2 class="cta-title" id="cta-title">
+              Lancez votre billetterie,<br />en toute sérénité.
+            </h2>
+            <p class="cta-desc">
+              Rejoignez les organisateurs qui ont choisi TUKIO PRO pour leurs
+              grands événements.
+            </p>
+            <div style="margin-top: 2rem">
+              <a
+                href="../signup/index.html"
+                class="btn-hero-primary"
+                style="
+                  font-size: 1.125rem;
+                  padding: 1.125rem 2.5rem;
+                  text-align: center;
+                  display: inline-block;
+                "
+                >Démarrer votre billetterie maintenant</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="../index.html" class="footer-logo">
+            <img
+              src="../images/Logotukio.svg"
+              alt="TUKIO PRO"
+              class="logo-image"
+            />
+            <span class="logo-text-alt">TUKIO <em>PRO</em></span>
+          </a>
+          <p class="footer-tagline">
+            La plateforme événementielle<br />pensée pour l'Afrique et le monde.
+          </p>
+          <div class="footer-socials" aria-label="Réseaux sociaux">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 320 512" fill="currentColor">
+                <path
+                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 448 512" fill="currentColor">
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 448 512" fill="currentColor">
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="X (Twitter)">
+              <svg viewBox="0 0 512 512" fill="currentColor">
+                <path
+                  d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <div class="footer-col">
+            <h3 class="footer-col-title">Modules</h3>
+            <ul role="list">
+              <li>
+                <a href="../tukio-pass/index.html" class="footer-link"
+                  >Tukio Pass</a
+                >
+              </li>
+              <li>
+                <a href="../e-voting/index.html" class="footer-link">E-vote</a>
+              </li>
+              <li>
+                <a href="../crowdfunding/index.html" class="footer-link"
+                  >Collect</a
+                >
+              </li>
+              <li>
+                <a href="index.html" class="footer-link"
+                  >Billetterie événementielle</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col-title">Ressources</h3>
+            <ul role="list">
+              <li><a href="#" class="footer-link">FAQ</a></li>
+              <li><a href="#contact" class="footer-link">Contact</a></li>
+              <li><a href="#" class="footer-link">Documentation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-col-title">Légal</h3>
+            <ul role="list">
+              <li>
+                <a href="../cgu/index.html" class="footer-link"
+                  >Mentions légales</a
+                >
+              </li>
+              <li><a href="../cgu/index.html" class="footer-link">CGU</a></li>
+              <li>
+                <a href="../privacy/index.html" class="footer-link"
+                  >Confidentialité</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 TUKIO PRO. Tous droits réservés.</p>
+        <p>Module Billetterie Événementielle</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
