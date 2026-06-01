@@ -79,12 +79,17 @@ h4 {
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+}
+@media (min-width: 480px) {
+  .nav-container {
+    padding: 0 1.5rem;
+  }
 }
 .nav-logo {
   display: flex;
@@ -271,7 +276,7 @@ h4 {
   right: 0;
   background: #fffdf5;
   border-bottom: 1px solid rgba(188, 164, 2, 0.15);
-  padding: 1rem 1.5rem 1.5rem;
+  padding: 0.75rem 1rem 1rem;
   transform: translateY(-100%);
   opacity: 0;
   pointer-events: none;
@@ -337,11 +342,16 @@ h4 {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  padding: 3rem 1.5rem;
+  padding: 2rem 1rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
   align-items: center;
+}
+@media (min-width: 480px) {
+  .module-hero-container {
+    padding: 3rem 1.5rem;
+  }
 }
 .module-hero-content {
   display: flex;
@@ -440,6 +450,11 @@ h4 {
   align-items: center;
   animation: fadeInUp 0.6s ease 0.2s both;
 }
+.module-hero-image svg {
+  width: 100%;
+  height: auto;
+  max-width: 560px;
+}
 .module-hero-image img {
   width: 100%;
   max-width: 600px;
@@ -452,7 +467,12 @@ h4 {
 .section-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
+}
+@media (min-width: 480px) {
+  .section-container {
+    padding: 0 1.5rem;
+  }
 }
 .section-header {
   text-align: center;
@@ -485,8 +505,13 @@ h4 {
 
 /* ── USE CASES ── */
 .usecases-section {
-  padding: 6rem 1.5rem;
+  padding: 3rem 1rem;
   background: #f8f5e8;
+}
+@media (min-width: 480px) {
+  .usecases-section {
+    padding: 6rem 1.5rem;
+  }
 }
 .usecases-grid {
   display: grid;
@@ -529,8 +554,13 @@ h4 {
 
 /* ── FEATURES ── */
 .features-section {
-  padding: 6rem 1.5rem;
+  padding: 3rem 1rem;
   background: #fffdf5;
+}
+@media (min-width: 480px) {
+  .features-section {
+    padding: 6rem 1.5rem;
+  }
 }
 .features-list {
   display: flex;
@@ -885,7 +915,12 @@ h4 {
 /* ── STATS ── */
 .stats-section {
   background: #1a1a0f;
-  padding: 5rem 1.5rem;
+  padding: 3rem 1rem;
+}
+@media (min-width: 480px) {
+  .stats-section {
+    padding: 5rem 1.5rem;
+  }
 }
 .stats-grid {
   display: grid;
@@ -928,8 +963,13 @@ h4 {
 
 /* ── TESTIMONIALS ── */
 .testimonials-section {
-  padding: 6rem 1.5rem;
+  padding: 3rem 1rem;
   background: #fffdf5;
+}
+@media (min-width: 480px) {
+  .testimonials-section {
+    padding: 6rem 1.5rem;
+  }
 }
 .testimonials-grid {
   display: grid;
@@ -1005,8 +1045,13 @@ h4 {
 
 /* ── FAQ ── */
 .faq-section {
-  padding: 6rem 1.5rem;
+  padding: 3rem 1rem;
   background: #f8f5e8;
+}
+@media (min-width: 480px) {
+  .faq-section {
+    padding: 6rem 1.5rem;
+  }
 }
 .faq-list {
   max-width: 720px;
@@ -1070,10 +1115,15 @@ h4 {
 /* ── CTA ── */
 .cta-section {
   position: relative;
-  padding: 6rem 1.5rem;
+  padding: 3rem 1rem;
   text-align: center;
   background: #1a1a0f;
   overflow: hidden;
+}
+@media (min-width: 480px) {
+  .cta-section {
+    padding: 6rem 1.5rem;
+  }
 }
 .cta-bg-glow {
   position: absolute;
@@ -1166,7 +1216,12 @@ h4 {
 .footer {
   background: #111008;
   border-top: 1px solid rgba(188, 164, 2, 0.1);
-  padding: 4.5rem 1.5rem 2rem;
+  padding: 2.5rem 1rem 1.5rem;
+}
+@media (min-width: 480px) {
+  .footer {
+    padding: 4.5rem 1.5rem 2rem;
+  }
 }
 .footer-container {
   max-width: 1200px;
@@ -1397,10 +1452,15 @@ h4 {
 
 /* ===== STYLES SECTION ÉVÉNEMENTS RÉCENTS ===== */
 .recent-events-section {
-  padding: 6.5rem 1.5rem;
+  padding: 3rem 1rem;
   background: #fffdf5;
   border-bottom: 1px solid rgba(188, 164, 2, 0.1);
   position: relative;
+}
+@media (min-width: 480px) {
+  .recent-events-section {
+    padding: 6.5rem 1.5rem;
+  }
 }
 .events-grid {
   display: grid;
