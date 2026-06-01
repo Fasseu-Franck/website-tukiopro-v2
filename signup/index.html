@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Créez votre compte TUKIO PRO — Accédez à la plateforme événementielle premium pour vos e-votings, collectes, billetterie et événements privés." />
+    <title>Créer un compte — TUKIO PRO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="../images/Logotukio.svg" />
+  </head>
+  <body>
+    <div class="signup-wrapper">
+      <!-- Decorative side panel (desktop only) -->
+      <div class="signup-side" aria-hidden="true">
+        <div class="side-content">
+          <a href="../index.html" class="side-logo">
+            <img src="../images/Logotukio.svg" alt="TUKIO PRO" />
+            <span>TUKIO <em>PRO</em></span>
+          </a>
+          <h2 class="side-title">Rejoignez la communauté <span>TUKIO PRO</span></h2>
+          <p class="side-desc">Organisez vos événements, collectes et votings depuis une seule plateforme souveraine et sécurisée.</p>
+          <div class="side-stats">
+            <div class="side-stat">
+              <strong>2 400+</strong>
+              <span>Événements créés</span>
+            </div>
+            <div class="side-stat">
+              <strong>98%</strong>
+              <span>Satisfaction</span>
+            </div>
+            <div class="side-stat">
+              <strong>40+</strong>
+              <span>Pays</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form panel -->
+      <div class="signup-form-panel">
+        <div class="signup-container reveal">
+          <a href="../index.html" class="signup-logo-mobile">
+            <img src="../images/Logotukio.svg" alt="TUKIO PRO" />
+            <span>TUKIO <em>PRO</em></span>
+          </a>
+          <div class="signup-header">
+            <h1 class="signup-title-text">Créer votre compte</h1>
+            <p class="signup-subtitle">Remplissez les informations ci-dessous pour démarrer</p>
+          </div>
+          <form action="#" method="POST" id="signupForm" novalidate>
+            <div class="form-group">
+              <label for="fullname">Nom complet</label>
+              <input
+                type="text"
+                id="fullname"
+                class="form-control"
+                placeholder="Jean Dupont"
+                required
+                autocomplete="name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse e-mail</label>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="jean@exemple.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Numéro de téléphone</label>
+              <input
+                type="tel"
+                id="phone"
+                class="form-control"
+                placeholder="+225 07 00 00 00 00"
+                required
+                autocomplete="tel"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Mot de passe</label>
+              <input
+                type="password"
+                id="password"
+                class="form-control"
+                placeholder="••••••••••••••••"
+                required
+                minlength="8"
+              />
+              <button
+                type="button"
+                class="password-toggle"
+                aria-label="Afficher le mot de passe"
+                id="togglePassword"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <line x1="3" y1="3" x2="21" y2="21"></line>
+                </svg>
+              </button>
+            </div>
+            <div class="form-group">
+              <label for="confirmPassword">Confirmation du mot de passe</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                class="form-control"
+                placeholder="••••••••••••••••"
+                required
+                minlength="8"
+              />
+              <button
+                type="button"
+                class="password-toggle"
+                aria-label="Afficher la confirmation"
+                id="toggleConfirmPassword"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <line x1="3" y1="3" x2="21" y2="21"></line>
+                </svg>
+              </button>
+            </div>
+            <div id="formError" class="form-error" hidden></div>
+            <button type="submit" class="btn-submit" id="submitBtn">Démarrer Maintenant</button>
+          </form>
+          <div class="login-prompt">
+            <p>Vous avez déjà un compte ?</p>
+            <a href="../login/index.html" class="login-link">Se connecter</a>
+          </div>
+          <a href="../index.html" class="back-home">Retour à l'accueil</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

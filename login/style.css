@@ -151,3 +151,28 @@ body {
   color: #1a1a0f;
   text-decoration: underline;
 }
+.signup-prompt {
+  text-align: center;
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(188, 164, 2, 0.15);
+}
+.signup-prompt p {
+  font-size: 0.875rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+.signup-link {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: #bca402;
+  text-decoration: none;
+  transition: color 0.2s, transform 0.2s;
+}
+.signup-link:hover {
+  color: #a89200;
+  text-decoration: underline;
+  transform: translateY(-1px);
+}
